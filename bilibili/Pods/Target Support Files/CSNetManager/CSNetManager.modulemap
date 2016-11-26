@@ -1,0 +1,6 @@
+framework module CSNetManager {
+  umbrella header "CSNetManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

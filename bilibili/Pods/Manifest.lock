@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (3.1.5)
+  - CSNetManager (0.0.6):
+    - Alamofire (~> 3.0)
+    - HanekeSwift (~> 0.10.1)
+    - RealReachability (~> 1.1.3)
+    - SwiftyJSON (~> 2.3.2)
+  - HanekeSwift (0.10.1)
+  - MJRefresh (3.1.12)
+  - RealReachability (1.1.8):
+    - RealReachability/Connection (= 1.1.8)
+    - RealReachability/Ping (= 1.1.8)
+  - RealReachability/Connection (1.1.8)
+  - RealReachability/Ping (1.1.8)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SnapKit (0.19.1)
+  - SwiftyJSON (2.3.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.1.2)
+  - CSNetManager (~> 0.0.6)
+  - MJRefresh (~> 3.1.12)
+  - SDCycleScrollView (~> 1.65)
+  - SnapKit (~> 0.19.1)
+
+SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  CSNetManager: f30b88237955c9d8078e7e9c52eb67354bcc301b
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  RealReachability: e6c8a2bbffa316006e8c282efc1ee2567d61a920
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SnapKit: eff58d6e3451bf2f482db2eccf86aecf371dc62d
+  SwiftyJSON: 0fd0a115a3c0c09b277d2ab801df154902b942c3
+
+COCOAPODS: 0.39.0
