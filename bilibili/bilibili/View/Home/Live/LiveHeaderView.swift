@@ -88,9 +88,22 @@ class LiveHeaderView: UICollectionReusableView, SDCycleScrollViewDelegate {
         //设置尺寸
         label.attributedText = attributedString
     }
+    //找出view所属的控制器进行页面之间的跳转   2016.8.29 高琳琳
+    func controller(view:UIView)->UIViewController?{
+        for var next:UIView? = view;next != nil;next = next!.superview{
+            if let nextResponder = next?.nextResponder() where nextResponder.isKindOfClass(UIViewController.self){
+                return (nextResponder as! UIViewController)
+            }
+        }
+        return nil
+    }
     //MARK: -- delegate
     func cycleScrollView(cycleScrollView: SDCycleScrollView!, didSelectItemAtIndex index: Int) {
-        
+        let vc = self.controller(self)! as UIViewController
+        let banner = BannerDetailViewController()
+        banner.url = bannerModelArr[index].uri
+        banner.title = bannerModelArr[index].title
+        vc.navigationController?.pushViewController(banner, animated: false)
     }
     
     //MARK: -- setter and getter

@@ -139,9 +139,22 @@ class BangumiViewHeader: UICollectionReusableView, SDCycleScrollViewDelegate {
         }
     }
     
+    //找出view所属的控制器进行页面之间的跳转   2016.8.29 高琳琳
+    func controller(view:UIView)->UIViewController?{
+        for var next:UIView? = view;next != nil;next = next!.superview{
+            if let nextResponder = next?.nextResponder() where nextResponder.isKindOfClass(UIViewController.self){
+                return (nextResponder as! UIViewController)
+            }
+        }
+        return nil
+    }
     //MARK: -- delegate
     func cycleScrollView(cycleScrollView: SDCycleScrollView!, didSelectItemAtIndex index: Int) {
-        
+        let banner = BannerDetailViewController()
+        banner.title = bannerArr[index].title
+        banner.url = bannerArr[index].uri
+        let vc = self.controller(self)! as UIViewController
+        vc.navigationController?.pushViewController(banner, animated: false)
     }
     
     //MARK: -- setter and getter

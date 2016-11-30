@@ -40,7 +40,7 @@ class RecommendViewReformer: CSReformer {
                 if bannerArray != nil && bannerArray!.count > 0 {
                     for k in 0..<bannerArray!.count {
                         
-                        let bannerModel = RecBannerModel(bannerImage: bannerArray![k]["image"].stringValue, uri: bannerArray![k]["uri"].stringValue)
+                        let bannerModel = RecBannerModel(bannerImage: bannerArray![k]["image"].stringValue, uri: bannerArray![k]["uri"].stringValue, title: bannerArray![k]["title"].stringValue)
                         bannerDetails.append(bannerModel)
                     }
                 }

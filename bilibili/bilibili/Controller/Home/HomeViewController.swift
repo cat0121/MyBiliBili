@@ -18,6 +18,10 @@ class HomeViewController: UIViewController {
         setUpAllViewController()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.hidden = false
+    }
     //MARK: -- private method
     func setUpAllViewController() {
         //直播

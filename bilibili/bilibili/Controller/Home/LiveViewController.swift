@@ -25,6 +25,11 @@ class LiveViewController: UIViewController {
         initHelper()
         liveViewHelper?.liveManager?.loadData()
     }
+    //MARK: -- event response
+//    func headerViewAction(tap: UITapGestureRecognizer) {
+//        let banner = BannerDetailViewController()
+//        banner.url = liveDataSource?.banner
+//    }
     
     //MARK: -- private method
     func initBaseLayout() {
@@ -97,10 +102,7 @@ extension LiveViewController: UICollectionViewDelegate,UICollectionViewDataSourc
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("liveCell", forIndexPath: indexPath) as! LiveViewCell
         
         cell.pationsModel = (liveDataSource?.partions![indexPath.section].partionsDetails![indexPath.item])!
-//        let gradientyLayer = CAGradientLayer()
-//        gradientyLayer.frame = cell.bounds
-//        gradientyLayer.colors = [UIColor.lightGrayColor(),UIColor.grayColor(),UIColor.blackColor()]
-//        cell.layer.insertSublayer(gradientyLayer, atIndex: 0)
+
         return cell
     }
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
@@ -113,6 +115,9 @@ extension LiveViewController: UICollectionViewDelegate,UICollectionViewDataSourc
         let header = liveCollection.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "liveHeader", forIndexPath: indexPath) as! LiveHeaderView
         if indexPath.section == 0 {
             header.bannerModelArr = liveDataSource!.banner!
+//            //添加点击手势
+//            let tap = UITapGestureRecognizer(target: self, action: #selector(LiveViewController.headerViewAction(_:)))
+//            header.liveScrollView.addGestureRecognizer(tap)
         }
         header.liveDetailsModel = liveDataSource!.partions![indexPath.section]
         return header

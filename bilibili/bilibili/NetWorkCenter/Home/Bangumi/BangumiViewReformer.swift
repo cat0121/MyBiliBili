@@ -24,7 +24,7 @@ class BangumiViewReformer: CSReformer {
             }
             var banners = [BangumiBannerModel]()
             for j in 0..<adJSON["head"].count {
-                let bangumiBannerModel = BangumiBannerModel(img: adJSON["head"][j]["img"].stringValue)
+                let bangumiBannerModel = BangumiBannerModel(img: adJSON["head"][j]["img"].stringValue, title: adJSON["head"][j]["title"].stringValue, uri: adJSON["head"][j]["link"].stringValue)
                 banners.append(bangumiBannerModel)
             }
             let ad = adModel(banners: banners, bodys: bodys)

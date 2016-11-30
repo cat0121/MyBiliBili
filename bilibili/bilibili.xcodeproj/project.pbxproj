@@ -32,6 +32,7 @@
 		F935BC701DE574090074DA05 /* ShortFilmViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935BC6F1DE574090074DA05 /* ShortFilmViewManager.swift */; };
 		F935BC721DE5741F0074DA05 /* ShortFilmAllManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935BC711DE5741F0074DA05 /* ShortFilmAllManager.swift */; };
 		F935BC761DE581740074DA05 /* SynthesisViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935BC751DE581740074DA05 /* SynthesisViewManager.swift */; };
+		F94C36A01DED4BA4002FA904 /* BannerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94C369F1DED4BA4002FA904 /* BannerDetailViewController.swift */; };
 		F961E5711DDDB72800945F2C /* PartionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961E5701DDDB72800945F2C /* PartionModel.swift */; };
 		F96304131DDC66BA00B0F1F7 /* BangumiViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96304121DDC66BA00B0F1F7 /* BangumiViewHeader.swift */; };
 		F964555D1DDC0488007D3EE1 /* BangumiViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964555C1DDC0488007D3EE1 /* BangumiViewManager.swift */; };
@@ -205,6 +206,7 @@
 		F935BC6F1DE574090074DA05 /* ShortFilmViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortFilmViewManager.swift; sourceTree = "<group>"; };
 		F935BC711DE5741F0074DA05 /* ShortFilmAllManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortFilmAllManager.swift; sourceTree = "<group>"; };
 		F935BC751DE581740074DA05 /* SynthesisViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynthesisViewManager.swift; sourceTree = "<group>"; };
+		F94C369F1DED4BA4002FA904 /* BannerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerDetailViewController.swift; sourceTree = "<group>"; };
 		F961E5701DDDB72800945F2C /* PartionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartionModel.swift; sourceTree = "<group>"; };
 		F96304121DDC66BA00B0F1F7 /* BangumiViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiViewHeader.swift; sourceTree = "<group>"; };
 		F964555C1DDC0488007D3EE1 /* BangumiViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiViewManager.swift; sourceTree = "<group>"; };
@@ -532,6 +534,7 @@
 		F926E84A1DD0573400AB28B8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F99C28761DED489A0016912A /* BannerDetail */,
 				F97B79741DD070C000F35DC3 /* HomeViewController.swift */,
 				F99B0D021DD1801500C0DF76 /* LiveViewController.swift */,
 				F97E5EF71DD1836B00539FD8 /* RecommendViewController.swift */,
@@ -968,6 +971,14 @@
 			path = Attention;
 			sourceTree = "<group>";
 		};
+		F99C28761DED489A0016912A /* BannerDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F94C369F1DED4BA4002FA904 /* BannerDetailViewController.swift */,
+			);
+			path = BannerDetail;
+			sourceTree = "<group>";
+		};
 		F9A447771DE6833E00E8BB6B /* MusicReprise */ = {
 			isa = PBXGroup;
 			children = (
@@ -1316,6 +1327,7 @@
 			files = (
 				F925212E1DD1995200D8E45C /* SCNavTabBarController.m in Sources */,
 				F99A3D4F1DE44DDE00587685 /* InfomationAllManager.swift in Sources */,
+				F94C36A01DED4BA4002FA904 /* BannerDetailViewController.swift in Sources */,
 				F9A4478B1DE6929400E8BB6B /* PlayMusicViewManager.swift in Sources */,
 				F98809751DE4113B003DE611 /* SerialAllManager.swift in Sources */,
 				F90582A31DE6E1F60003C440 /* DynamicViewCell.swift in Sources */,

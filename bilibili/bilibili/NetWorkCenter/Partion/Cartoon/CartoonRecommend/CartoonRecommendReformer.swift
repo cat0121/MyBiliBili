@@ -17,7 +17,7 @@ class CartoonRecommendReformer: CSReformer {
             let bannerJSON = dataJSON["banner"]["top"]
             var banners = [RecBannerModel]()
             for i in 0..<bannerJSON.count {
-                let bannerModel = RecBannerModel(bannerImage: bannerJSON[i]["image"].stringValue, uri: bannerJSON[i]["uri"].stringValue)
+                let bannerModel = RecBannerModel(bannerImage: bannerJSON[i]["image"].stringValue, uri: bannerJSON[i]["uri"].stringValue, title: bannerJSON[i]["title"].stringValue)
                 banners.append(bannerModel)
             }
             //热门推荐

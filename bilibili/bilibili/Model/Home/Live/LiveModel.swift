@@ -26,8 +26,12 @@ class LiveModel: NSObject {
 //头视图
 class LiveBannerModel: NSObject {
     var img: String?
-    init(img: String) {
+    var uri: String?
+    var title: String?
+    init(img: String, uri: String, title: String) {
         self.img = img
+        self.uri = uri
+        self.title = title
     }
 }
 

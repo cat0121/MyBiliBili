@@ -56,7 +56,6 @@ extension DynamicViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("dynamicCell", forIndexPath: indexPath) as! DynamicViewCell
-        cell.backgroundColor = UIColor.orangeColor()
         return cell
     }
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {

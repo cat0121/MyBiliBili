@@ -46,6 +46,7 @@ class DynamicViewCell: UICollectionViewCell {
     var dynamicImg: UIImageView {
         if _chaseImg == nil {
             _chaseImg = UIImageView()
+            _chaseImg.backgroundColor = UIColor.orangeColor()
             _chaseImg.layer.cornerRadius = 10.0
             _chaseImg.layer.masksToBounds = true
         }

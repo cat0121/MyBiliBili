@@ -56,9 +56,11 @@ class RecBannerModel: NSObject {
     var bannerImage: String?
     //链接
     var uri: String?
+    var title: String?
     
-    init(bannerImage: String, uri: String) {
+    init(bannerImage: String, uri: String, title: String) {
         self.bannerImage = bannerImage
         self.uri = uri
+        self.title = title
     }
 }

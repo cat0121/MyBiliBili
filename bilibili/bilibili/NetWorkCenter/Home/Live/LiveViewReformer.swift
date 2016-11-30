@@ -19,7 +19,7 @@ class LiveViewReformer: CSReformer {
             //头视图
             var bannerArr = [LiveBannerModel]()
             for i in 0..<bannerJSON.count {
-                let bannerModel = LiveBannerModel(img: bannerJSON[i]["img"].stringValue)
+                let bannerModel = LiveBannerModel(img: bannerJSON[i]["img"].stringValue, uri: bannerJSON[i]["link"].stringValue, title: bannerJSON[i]["title"].stringValue)
                 bannerArr.append(bannerModel)
             }
             //body

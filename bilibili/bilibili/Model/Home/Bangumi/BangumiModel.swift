@@ -32,8 +32,13 @@ class adModel: NSObject {
 }
 class BangumiBannerModel: NSObject {
     var img: String?
-    init(img: String) {
+    var title: String?
+    var uri: String?
+    
+    init(img: String, title: String, uri: String) {
         self.img = img
+        self.title = title
+        self.uri = uri
     }
 }
 class BangumiBodyModel: NSObject {
