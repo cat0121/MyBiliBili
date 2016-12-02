@@ -1,8 +1,11 @@
 platform :ios, '8.0'
 use_frameworks!
 
+target 'bilibili' do
 pod 'Alamofire', '~> 3.1.2’
 pod 'SDCycleScrollView', '~> 1.65'
 pod 'SnapKit', '~> 0.19.1'
 pod 'CSNetManager', '~> 0.0.6'
 pod 'MJRefresh', '~> 3.1.12'
+pod 'MBProgressHUD’, '~> 1.0.0'
+end

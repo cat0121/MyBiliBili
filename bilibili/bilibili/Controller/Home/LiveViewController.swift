@@ -55,11 +55,12 @@ class LiveViewController: UIViewController {
             layout.itemSize = CGSizeMake(SCREEN_WIDTH*0.47, SCREEN_HEIGHT*0.23)
             layout.sectionInset = UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0)
             _liveCollection = UICollectionView(frame: CGRectZero, collectionViewLayout: layout)
-            _liveCollection.backgroundColor = UIColor.whiteColor()
+            _liveCollection.backgroundColor = YYBackgroundColor
             //添加下拉刷新 （带有最后刷新的时间）
             let header = MJRefreshNormalHeader(refreshingBlock: {
                 self.liveViewHelper?.liveManager?.loadData()
             })
+            header.setTitle("下拉加载更多", forState: .Idle)
             header.beginRefreshing()
             _liveCollection.mj_header = header
             

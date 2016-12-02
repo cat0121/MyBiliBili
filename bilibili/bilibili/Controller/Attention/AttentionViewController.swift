@@ -30,5 +30,6 @@ class AttentionViewController: UIViewController {
         sdnav.navTabBarColor = UIColor(red: 0.89, green: 0.49, blue: 0.61, alpha: 1)
         self.view.backgroundColor = UIColor.whiteColor()
         sdnav.addParentController(self)
+        
     }
 }

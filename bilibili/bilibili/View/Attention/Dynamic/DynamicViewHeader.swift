@@ -32,19 +32,19 @@ class DynamicViewHeader: UICollectionReusableView {
     func layoutPageSubviews() {
         authorIcon.snp_makeConstraints { (make) in
             make.left.equalTo(self).offset(10)
-            make.top.equalTo(self).offset(3)
-            make.width.equalTo(SCREEN_WIDTH*0.12)
-            make.height.equalTo(SCREEN_WIDTH*0.12)
+            make.top.equalTo(self).offset(4)
+            make.width.equalTo(SCREEN_WIDTH*0.10)
+            make.height.equalTo(SCREEN_WIDTH*0.10)
         }
         authorName.snp_makeConstraints { (make) in
             make.left.equalTo(authorIcon.snp_right).offset(10)
-            make.top.equalTo(self).offset(8)
-            make.height.equalTo(25)
+            make.top.equalTo(self).offset(5)
+            make.height.equalTo(20)
         }
         fanNum.snp_makeConstraints { (make) in
             make.left.equalTo(authorIcon.snp_right).offset(10)
-            make.top.equalTo(authorName.snp_bottom).offset(3)
-            make.height.equalTo(20)
+            make.top.equalTo(authorName.snp_bottom).offset(0)
+            make.height.equalTo(16)
         }
         attentionBtn.snp_makeConstraints { (make) in
             make.right.equalTo(self).offset(-10)
@@ -52,6 +52,7 @@ class DynamicViewHeader: UICollectionReusableView {
             make.height.equalTo(25)
             make.width.equalTo(40)
         }
+        
     }
     
     //MARK: -- private method
@@ -59,7 +60,7 @@ class DynamicViewHeader: UICollectionReusableView {
     var authorIcon: UIImageView {
         if _authorIcon == nil {
             _authorIcon = UIImageView()
-            _authorIcon.layer.cornerRadius = 45.0
+            _authorIcon.layer.cornerRadius = 19.0
             _authorIcon.layer.masksToBounds = true
         }
         return _authorIcon
@@ -86,7 +87,7 @@ class DynamicViewHeader: UICollectionReusableView {
         if _attentionBtn == nil {
             _attentionBtn = UIButton(type: .Custom)
             _attentionBtn.layer.masksToBounds = true
-            _attentionBtn.layer.cornerRadius = 10.0
+            _attentionBtn.layer.cornerRadius = 7.0
             //设置边界高度
             _attentionBtn.layer.borderWidth = 1
             //设置按钮的边界颜色
@@ -96,5 +97,18 @@ class DynamicViewHeader: UICollectionReusableView {
             _attentionBtn.titleLabel?.font = UIFont.systemFontOfSize(14)
         }
         return _attentionBtn
+    }
+    
+    var _dynamicModel: DynamicVideos!
+    var dynamicModel: DynamicVideos {
+        get  {
+            return _dynamicModel
+        }
+        set {
+            _dynamicModel = newValue
+            _authorIcon.sd_setImageWithURL(NSURL(string: newValue.avatar!), placeholderImage: UIImage(named: "default_img"))
+            _fanNum.text = String.init(format: "%d", newValue.fans!)
+            _authorName.text = newValue.name
+        }
     }
 }

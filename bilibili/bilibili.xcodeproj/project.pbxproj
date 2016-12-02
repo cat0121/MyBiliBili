@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3229B5727FA213DE1153BF8D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99448607A4FD67BD42174C26 /* Pods.framework */; };
+		0557CD1CB5ED4F49540848B3 /* Pods_bilibili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43559D16FBF1D98C5F722161 /* Pods_bilibili.framework */; };
 		F90582981DE6BA330003C440 /* ChaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90582971DE6BA330003C440 /* ChaseViewController.swift */; };
 		F905829A1DE6BAA00003C440 /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90582991DE6BAA00003C440 /* DynamicViewController.swift */; };
 		F905829C1DE6BB4A0003C440 /* MarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F905829B1DE6BB4A0003C440 /* MarkViewController.swift */; };
-		F905829E1DE6C94D0003C440 /* ChaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F905829D1DE6C94D0003C440 /* ChaseViewCell.swift */; };
 		F90582A31DE6E1F60003C440 /* DynamicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90582A21DE6E1F60003C440 /* DynamicViewCell.swift */; };
 		F90582A51DE6E2190003C440 /* DynamicViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90582A41DE6E2190003C440 /* DynamicViewHeader.swift */; };
 		F925211F1DD1946A00D8E45C /* BangumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F925211E1DD1946A00D8E45C /* BangumiViewController.swift */; };
@@ -118,6 +117,13 @@
 		F9A447A51DE6B0C100E8BB6B /* MusicSetViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A447A41DE6B0C100E8BB6B /* MusicSetViewManager.swift */; };
 		F9A447A71DE6B0D400E8BB6B /* MusicSetAllManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A447A61DE6B0D400E8BB6B /* MusicSetAllManager.swift */; };
 		F9A447A91DE6B16400E8BB6B /* MusicSetViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A447A81DE6B16400E8BB6B /* MusicSetViewHelper.swift */; };
+		F9ACD7D81DEFEDDA00F535E4 /* ChaseViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7D71DEFEDDA00F535E4 /* ChaseViewManager.swift */; };
+		F9ACD7DA1DEFEDE700F535E4 /* ChaseViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7D91DEFEDE700F535E4 /* ChaseViewReformer.swift */; };
+		F9ACD7DC1DEFEDFB00F535E4 /* DynamicViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7DB1DEFEDFB00F535E4 /* DynamicViewManager.swift */; };
+		F9ACD7DE1DEFEE7400F535E4 /* DynamicViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7DD1DEFEE7400F535E4 /* DynamicViewReformer.swift */; };
+		F9ACD7E11DEFEEE100F535E4 /* ChaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7E01DEFEEE100F535E4 /* ChaseModel.swift */; };
+		F9ACD7E31DEFEEEE00F535E4 /* DynamicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7E21DEFEEEE00F535E4 /* DynamicModel.swift */; };
+		F9ACD7E51DEFEEFA00F535E4 /* MarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7E41DEFEEFA00F535E4 /* MarkModel.swift */; };
 		F9B240851DD40DBA0089824D /* NetServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B240841DD40DBA0089824D /* NetServerConfig.swift */; };
 		F9B240881DD413670089824D /* RecommendViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B240871DD413670089824D /* RecommendViewCell.swift */; };
 		F9B2408A1DD413860089824D /* RecommendViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B240891DD413860089824D /* RecommendViewHeader.swift */; };
@@ -148,6 +154,13 @@
 		F9E45E461DD9C44D0034B359 /* LiveViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E45E451DD9C44D0034B359 /* LiveViewReformer.swift */; };
 		F9E45E481DD9C7380034B359 /* LiveViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E45E471DD9C7380034B359 /* LiveViewHelper.swift */; };
 		F9F91AC81DDC035100E3CD8B /* BangumiViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F91AC71DDC035100E3CD8B /* BangumiViewHelper.swift */; };
+		F9FBBA731DF1216D002C310F /* ChaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBBA721DF1216D002C310F /* ChaseViewCell.swift */; };
+		F9FBBA751DF13A4F002C310F /* MarkViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBBA741DF13A4F002C310F /* MarkViewManager.swift */; };
+		F9FBBA771DF13B1D002C310F /* MarkViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBBA761DF13B1D002C310F /* MarkViewReformer.swift */; };
+		F9FBBA7D1DF13F8F002C310F /* ChaseViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBBA7A1DF13F8F002C310F /* ChaseViewHelper.swift */; };
+		F9FBBA7E1DF13F8F002C310F /* DynamicViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBBA7B1DF13F8F002C310F /* DynamicViewHelper.swift */; };
+		F9FBBA7F1DF13F8F002C310F /* MarkViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBBA7C1DF13F8F002C310F /* MarkViewHelper.swift */; };
+		F9FBBA821DF144AD002C310F /* MarkViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBBA811DF144AD002C310F /* MarkViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,13 +181,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43559D16FBF1D98C5F722161 /* Pods_bilibili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bilibili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B01A96A176411EA3445C585 /* Pods-bilibili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili.release.xcconfig"; path = "Pods/Target Support Files/Pods-bilibili/Pods-bilibili.release.xcconfig"; sourceTree = "<group>"; };
 		99448607A4FD67BD42174C26 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9312B84930FF6A097575DAD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		F5A105C2C3B460E200216BF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A2614420F5856B59298ADF6C /* Pods-bilibili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bilibili/Pods-bilibili.debug.xcconfig"; sourceTree = "<group>"; };
 		F90582971DE6BA330003C440 /* ChaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaseViewController.swift; sourceTree = "<group>"; };
 		F90582991DE6BAA00003C440 /* DynamicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicViewController.swift; sourceTree = "<group>"; };
 		F905829B1DE6BB4A0003C440 /* MarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkViewController.swift; sourceTree = "<group>"; };
-		F905829D1DE6C94D0003C440 /* ChaseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaseViewCell.swift; sourceTree = "<group>"; };
 		F90582A21DE6E1F60003C440 /* DynamicViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicViewCell.swift; sourceTree = "<group>"; };
 		F90582A41DE6E2190003C440 /* DynamicViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicViewHeader.swift; sourceTree = "<group>"; };
 		F925211E1DD1946A00D8E45C /* BangumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiViewController.swift; sourceTree = "<group>"; };
@@ -292,6 +305,13 @@
 		F9A447A41DE6B0C100E8BB6B /* MusicSetViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSetViewManager.swift; sourceTree = "<group>"; };
 		F9A447A61DE6B0D400E8BB6B /* MusicSetAllManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSetAllManager.swift; sourceTree = "<group>"; };
 		F9A447A81DE6B16400E8BB6B /* MusicSetViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSetViewHelper.swift; sourceTree = "<group>"; };
+		F9ACD7D71DEFEDDA00F535E4 /* ChaseViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaseViewManager.swift; sourceTree = "<group>"; };
+		F9ACD7D91DEFEDE700F535E4 /* ChaseViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaseViewReformer.swift; sourceTree = "<group>"; };
+		F9ACD7DB1DEFEDFB00F535E4 /* DynamicViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicViewManager.swift; sourceTree = "<group>"; };
+		F9ACD7DD1DEFEE7400F535E4 /* DynamicViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicViewReformer.swift; sourceTree = "<group>"; };
+		F9ACD7E01DEFEEE100F535E4 /* ChaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaseModel.swift; sourceTree = "<group>"; };
+		F9ACD7E21DEFEEEE00F535E4 /* DynamicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicModel.swift; sourceTree = "<group>"; };
+		F9ACD7E41DEFEEFA00F535E4 /* MarkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkModel.swift; sourceTree = "<group>"; };
 		F9B240841DD40DBA0089824D /* NetServerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetServerConfig.swift; sourceTree = "<group>"; };
 		F9B240871DD413670089824D /* RecommendViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewCell.swift; sourceTree = "<group>"; };
 		F9B240891DD413860089824D /* RecommendViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewHeader.swift; sourceTree = "<group>"; };
@@ -322,6 +342,13 @@
 		F9E45E451DD9C44D0034B359 /* LiveViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewReformer.swift; sourceTree = "<group>"; };
 		F9E45E471DD9C7380034B359 /* LiveViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewHelper.swift; sourceTree = "<group>"; };
 		F9F91AC71DDC035100E3CD8B /* BangumiViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiViewHelper.swift; sourceTree = "<group>"; };
+		F9FBBA721DF1216D002C310F /* ChaseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaseViewCell.swift; sourceTree = "<group>"; };
+		F9FBBA741DF13A4F002C310F /* MarkViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkViewManager.swift; sourceTree = "<group>"; };
+		F9FBBA761DF13B1D002C310F /* MarkViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkViewReformer.swift; sourceTree = "<group>"; };
+		F9FBBA7A1DF13F8F002C310F /* ChaseViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaseViewHelper.swift; sourceTree = "<group>"; };
+		F9FBBA7B1DF13F8F002C310F /* DynamicViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicViewHelper.swift; sourceTree = "<group>"; };
+		F9FBBA7C1DF13F8F002C310F /* MarkViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkViewHelper.swift; sourceTree = "<group>"; };
+		F9FBBA811DF144AD002C310F /* MarkViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,7 +356,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3229B5727FA213DE1153BF8D /* Pods.framework in Frameworks */,
+				0557CD1CB5ED4F49540848B3 /* Pods_bilibili.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,21 +377,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C4D77375A5914BE8979B0C3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F5A105C2C3B460E200216BF1 /* Pods.debug.xcconfig */,
-				A9312B84930FF6A097575DAD /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		575971E664C8D43D2F0743DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				99448607A4FD67BD42174C26 /* Pods.framework */,
+				43559D16FBF1D98C5F722161 /* Pods_bilibili.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D09E8C575B5355238B839108 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2614420F5856B59298ADF6C /* Pods-bilibili.debug.xcconfig */,
+				4B01A96A176411EA3445C585 /* Pods-bilibili.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		F90582A11DE6E1F60003C440 /* Dynamic */ = {
@@ -415,8 +443,8 @@
 				F926E8261DD04F0F00AB28B8 /* bilibiliTests */,
 				F926E8311DD04F0F00AB28B8 /* bilibiliUITests */,
 				F926E8101DD04F0900AB28B8 /* Products */,
-				0C4D77375A5914BE8979B0C3 /* Pods */,
 				575971E664C8D43D2F0743DF /* Frameworks */,
+				D09E8C575B5355238B839108 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -484,6 +512,7 @@
 			children = (
 				F9665FBF1DE2C88A0060D6F8 /* Home */,
 				F9D450B11DD44C9D00EC4B64 /* Partion */,
+				F9ACD7DF1DEFEE9600F535E4 /* Attention */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -706,8 +735,9 @@
 		F976997B1DD2C56D007B85B7 /* Attention */ = {
 			isa = PBXGroup;
 			children = (
+				F9FBBA711DF1216D002C310F /* Chase */,
 				F90582A11DE6E1F60003C440 /* Dynamic */,
-				F905829D1DE6C94D0003C440 /* ChaseViewCell.swift */,
+				F9FBBA801DF14498002C310F /* Mark */,
 			);
 			path = Attention;
 			sourceTree = "<group>";
@@ -876,8 +906,9 @@
 		F9941AA11DD30AEE00603838 /* NetWorkCenter */ = {
 			isa = PBXGroup;
 			children = (
-				F9665FB51DE2C1BA0060D6F8 /* Partion */,
 				F9941AA21DD30AEE00603838 /* Home */,
+				F9665FB51DE2C1BA0060D6F8 /* Partion */,
+				F9ACD7D11DEFECDE00F535E4 /* Attention */,
 				F9B240841DD40DBA0089824D /* NetServerConfig.swift */,
 			);
 			path = NetWorkCenter;
@@ -967,6 +998,9 @@
 		F99A947F1DE80D8B00AE4282 /* Attention */ = {
 			isa = PBXGroup;
 			children = (
+				F9FBBA7A1DF13F8F002C310F /* ChaseViewHelper.swift */,
+				F9FBBA7B1DF13F8F002C310F /* DynamicViewHelper.swift */,
+				F9FBBA7C1DF13F8F002C310F /* MarkViewHelper.swift */,
 			);
 			path = Attention;
 			sourceTree = "<group>";
@@ -1040,6 +1074,53 @@
 				F9A447881DE68D5900E8BB6B /* VOCALOIDAllManager.swift */,
 			);
 			path = VOCALOID;
+			sourceTree = "<group>";
+		};
+		F9ACD7D11DEFECDE00F535E4 /* Attention */ = {
+			isa = PBXGroup;
+			children = (
+				F9ACD7D21DEFECDE00F535E4 /* Chase */,
+				F9ACD7D31DEFECDE00F535E4 /* Dynamic */,
+				F9ACD7D41DEFECDE00F535E4 /* Mark */,
+			);
+			path = Attention;
+			sourceTree = "<group>";
+		};
+		F9ACD7D21DEFECDE00F535E4 /* Chase */ = {
+			isa = PBXGroup;
+			children = (
+				F9ACD7D71DEFEDDA00F535E4 /* ChaseViewManager.swift */,
+				F9ACD7D91DEFEDE700F535E4 /* ChaseViewReformer.swift */,
+			);
+			path = Chase;
+			sourceTree = "<group>";
+		};
+		F9ACD7D31DEFECDE00F535E4 /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				F9ACD7DB1DEFEDFB00F535E4 /* DynamicViewManager.swift */,
+				F9ACD7DD1DEFEE7400F535E4 /* DynamicViewReformer.swift */,
+			);
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		F9ACD7D41DEFECDE00F535E4 /* Mark */ = {
+			isa = PBXGroup;
+			children = (
+				F9FBBA741DF13A4F002C310F /* MarkViewManager.swift */,
+				F9FBBA761DF13B1D002C310F /* MarkViewReformer.swift */,
+			);
+			path = Mark;
+			sourceTree = "<group>";
+		};
+		F9ACD7DF1DEFEE9600F535E4 /* Attention */ = {
+			isa = PBXGroup;
+			children = (
+				F9ACD7E01DEFEEE100F535E4 /* ChaseModel.swift */,
+				F9ACD7E21DEFEEEE00F535E4 /* DynamicModel.swift */,
+				F9ACD7E41DEFEEFA00F535E4 /* MarkModel.swift */,
+			);
+			path = Attention;
 			sourceTree = "<group>";
 		};
 		F9B240861DD413670089824D /* Recommend */ = {
@@ -1142,6 +1223,22 @@
 			path = Live;
 			sourceTree = "<group>";
 		};
+		F9FBBA711DF1216D002C310F /* Chase */ = {
+			isa = PBXGroup;
+			children = (
+				F9FBBA721DF1216D002C310F /* ChaseViewCell.swift */,
+			);
+			path = Chase;
+			sourceTree = "<group>";
+		};
+		F9FBBA801DF14498002C310F /* Mark */ = {
+			isa = PBXGroup;
+			children = (
+				F9FBBA811DF144AD002C310F /* MarkViewCell.swift */,
+			);
+			path = Mark;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1149,12 +1246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F926E8371DD04F0F00AB28B8 /* Build configuration list for PBXNativeTarget "bilibili" */;
 			buildPhases = (
-				837E83DC6C19E3B2F21F10D9 /* Check Pods Manifest.lock */,
+				233CEC2E392CF5A6D2ADE3C9 /* [CP] Check Pods Manifest.lock */,
 				F926E80B1DD04F0900AB28B8 /* Sources */,
 				F926E80C1DD04F0900AB28B8 /* Frameworks */,
 				F926E80D1DD04F0900AB28B8 /* Resources */,
-				C02EB0AB6CE6E2EFA053E2F4 /* Embed Pods Frameworks */,
-				D8A9BA37BDEC6E90D13FED0D /* Copy Pods Resources */,
+				FB30D259D4A47219A4B14221 /* [CP] Embed Pods Frameworks */,
+				E67E852946EF6F3EF03C7FEC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1273,14 +1370,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		837E83DC6C19E3B2F21F10D9 /* Check Pods Manifest.lock */ = {
+		233CEC2E392CF5A6D2ADE3C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1288,34 +1385,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C02EB0AB6CE6E2EFA053E2F4 /* Embed Pods Frameworks */ = {
+		E67E852946EF6F3EF03C7FEC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bilibili/Pods-bilibili-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D8A9BA37BDEC6E90D13FED0D /* Copy Pods Resources */ = {
+		FB30D259D4A47219A4B14221 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bilibili/Pods-bilibili-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1336,7 +1433,6 @@
 				F9E45E461DD9C44D0034B359 /* LiveViewReformer.swift in Sources */,
 				F9838C021DE56CC3009AE2C1 /* MADViewHelper.swift in Sources */,
 				F9DEDC301DDAAE6500224BB4 /* LiveViewCell.swift in Sources */,
-				F905829E1DE6C94D0003C440 /* ChaseViewCell.swift in Sources */,
 				F98809821DE41C8A003DE611 /* EndAllManager.swift in Sources */,
 				F961E5711DDDB72800945F2C /* PartionModel.swift in Sources */,
 				F925212F1DD1995200D8E45C /* SCNavTabBar.m in Sources */,
@@ -1346,6 +1442,7 @@
 				F9665FB41DE2C1610060D6F8 /* SerialCartoonViewHelper.swift in Sources */,
 				F9E45E481DD9C7380034B359 /* LiveViewHelper.swift in Sources */,
 				F9A4478D1DE6931200E8BB6B /* PlayMusicAllManager.swift in Sources */,
+				F9ACD7D81DEFEDDA00F535E4 /* ChaseViewManager.swift in Sources */,
 				F9C586941DE58DE1002DD704 /* OPViewController.swift in Sources */,
 				F98809801DE412AE003DE611 /* EndCartoonViewHelper.swift in Sources */,
 				F9C5869A1DE5913A002DD704 /* MusicSetViewController.swift in Sources */,
@@ -1359,11 +1456,13 @@
 				F9E45E441DD9C4320034B359 /* LiveViewManager.swift in Sources */,
 				F9C9CA5A1DD417EB003F2340 /* RecommendViewManager.swift in Sources */,
 				F935BC761DE581740074DA05 /* SynthesisViewManager.swift in Sources */,
+				F9FBBA731DF1216D002C310F /* ChaseViewCell.swift in Sources */,
 				F9838C041DE56CD2009AE2C1 /* MMDViewHelper.swift in Sources */,
 				F9A447891DE68D5900E8BB6B /* VOCALOIDAllManager.swift in Sources */,
 				F9A447A11DE6AF3200E8BB6B /* ThreeAllManager.swift in Sources */,
 				F935BC721DE5741F0074DA05 /* ShortFilmAllManager.swift in Sources */,
 				F9A447A31DE6AF7300E8BB6B /* ThreeViewHelper.swift in Sources */,
+				F9FBBA771DF13B1D002C310F /* MarkViewReformer.swift in Sources */,
 				F964555D1DDC0488007D3EE1 /* BangumiViewManager.swift in Sources */,
 				F9C586871DE586F0002DD704 /* SynthesisAllManager.swift in Sources */,
 				F9A447911DE694EC00E8BB6B /* PlayMusicViewHelper.swift in Sources */,
@@ -1376,6 +1475,7 @@
 				F935BC6C1DE572530074DA05 /* MMDViewManager.swift in Sources */,
 				F9665FD01DE2C9900060D6F8 /* SerialCartoonModel.swift in Sources */,
 				F9838C0C1DE56E25009AE2C1 /* MADAllManager.swift in Sources */,
+				F9ACD7DE1DEFEE7400F535E4 /* DynamicViewReformer.swift in Sources */,
 				F9C9CA5E1DD41D3A003F2340 /* RecommendViewHepler.swift in Sources */,
 				F9838BEE1DE538A2009AE2C1 /* ShortFilmViewController.swift in Sources */,
 				F9A447831DE6888100E8BB6B /* MusicRepriseAllManager.swift in Sources */,
@@ -1401,11 +1501,14 @@
 				F935BC6E1DE572810074DA05 /* MMDAllManager.swift in Sources */,
 				F9838BFD1DE54284009AE2C1 /* CartoonRecommendReformer.swift in Sources */,
 				F9665FC71DE2C88A0060D6F8 /* LiveModel.swift in Sources */,
+				F9FBBA7F1DF13F8F002C310F /* MarkViewHelper.swift in Sources */,
+				F9FBBA7D1DF13F8F002C310F /* ChaseViewHelper.swift in Sources */,
 				F926E8481DD0510400AB28B8 /* ViewController.swift in Sources */,
 				F99A3D491DE44CCB00587685 /* InfomationViewHelper.swift in Sources */,
 				F9A447871DE68D4D00E8BB6B /* VOCALOIDViewManager.swift in Sources */,
 				F9A447991DE6AC1000E8BB6B /* OriginalViewHelper.swift in Sources */,
 				F9C5868C1DE58CF6002DD704 /* MusicRecommendViewController.swift in Sources */,
+				F9ACD7DC1DEFEDFB00F535E4 /* DynamicViewManager.swift in Sources */,
 				F99A3D431DE4353000587685 /* ChinaCartoonViewManager.swift in Sources */,
 				F9B240851DD40DBA0089824D /* NetServerConfig.swift in Sources */,
 				F9709EA11DDECA39002DCE48 /* ChinaCartoonViewController.swift in Sources */,
@@ -1415,13 +1518,18 @@
 				F9C586981DE59085002DD704 /* ThreeViewController.swift in Sources */,
 				F99B0D031DD1801500C0DF76 /* LiveViewController.swift in Sources */,
 				F905829C1DE6BB4A0003C440 /* MarkViewController.swift in Sources */,
+				F9ACD7DA1DEFEDE700F535E4 /* ChaseViewReformer.swift in Sources */,
 				F9838BE81DE5367F009AE2C1 /* PartionCartoonViewController.swift in Sources */,
+				F9ACD7E11DEFEEE100F535E4 /* ChaseModel.swift in Sources */,
+				F9FBBA751DF13A4F002C310F /* MarkViewManager.swift in Sources */,
 				F9838BEA1DE5380F009AE2C1 /* MADViewController.swift in Sources */,
 				F9838BEC1DE53841009AE2C1 /* MMDViewController.swift in Sources */,
+				F9FBBA7E1DF13F8F002C310F /* DynamicViewHelper.swift in Sources */,
 				F9A447811DE6873B00E8BB6B /* MusicRepriseViewHelper.swift in Sources */,
 				F9C9CA601DD42303003F2340 /* YAlertViewController.swift in Sources */,
 				F97B79731DD0706B00F35DC3 /* AttentionViewController.swift in Sources */,
 				F9A447851DE68D3600E8BB6B /* VOCALOIDViewHelper.swift in Sources */,
+				F9FBBA821DF144AD002C310F /* MarkViewCell.swift in Sources */,
 				F90582981DE6BA330003C440 /* ChaseViewController.swift in Sources */,
 				F926E8471DD0510400AB28B8 /* AppDelegate.swift in Sources */,
 				F9C586921DE58DD1002DD704 /* PlayMusicViewController.swift in Sources */,
@@ -1434,6 +1542,7 @@
 				F9709E9B1DDEC8C8002DCE48 /* PartionBangumiViewController.swift in Sources */,
 				F9709E9C1DDEC8C8002DCE48 /* SerialCartoonViewController.swift in Sources */,
 				F9C586961DE59053002DD704 /* OriginalViewController.swift in Sources */,
+				F9ACD7E51DEFEEFA00F535E4 /* MarkModel.swift in Sources */,
 				F9838C081DE56D2C009AE2C1 /* SynthesisViewHelper.swift in Sources */,
 				F9A447A71DE6B0D400E8BB6B /* MusicSetAllManager.swift in Sources */,
 				F98809861DE428AB003DE611 /* PartionBangumiBaseViewController.swift in Sources */,
@@ -1459,6 +1568,7 @@
 				F99A3D411DE434F200587685 /* ChinaCartoonViewHelper.swift in Sources */,
 				F9B3E0691DE5A2420094AB34 /* BangumiRecommendViewController.swift in Sources */,
 				F9A447A51DE6B0C100E8BB6B /* MusicSetViewManager.swift in Sources */,
+				F9ACD7E31DEFEEEE00F535E4 /* DynamicModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1600,7 +1710,7 @@
 		};
 		F926E8381DD04F0F00AB28B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5A105C2C3B460E200216BF1 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = A2614420F5856B59298ADF6C /* Pods-bilibili.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = bilibili/Info.plist;
@@ -1613,7 +1723,7 @@
 		};
 		F926E8391DD04F0F00AB28B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9312B84930FF6A097575DAD /* Pods.release.xcconfig */;
+			baseConfigurationReference = 4B01A96A176411EA3445C585 /* Pods-bilibili.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = bilibili/Info.plist;

@@ -29,37 +29,48 @@ class DynamicViewCell: UICollectionViewCell {
     func layoutPageSubviews() {
         dynamicImg.snp_makeConstraints { (make) in
             make.top.equalTo(self).offset(2)
-            make.left.equalTo(self).offset(0)
-            make.width.equalTo(self)
+            make.left.equalTo(self).offset(2)
+            make.right.equalTo(self).offset(-2)
             make.height.equalTo(SCREEN_HEIGHT*0.18)
         }
         dynamicTitle.snp_makeConstraints { (make) in
             make.top.equalTo(dynamicImg.snp_bottom).offset(5)
-            make.left.equalTo(self).offset(0)
+            make.left.equalTo(self).offset(2)
             make.height.equalTo(35)
             make.width.equalTo(self)
         }
     }
     
     //MARK: -- setter and getter
-    var _chaseImg: UIImageView!
+    var _dynamicImg: UIImageView!
     var dynamicImg: UIImageView {
-        if _chaseImg == nil {
-            _chaseImg = UIImageView()
-            _chaseImg.backgroundColor = UIColor.orangeColor()
-            _chaseImg.layer.cornerRadius = 10.0
-            _chaseImg.layer.masksToBounds = true
+        if _dynamicImg == nil {
+            _dynamicImg = UIImageView()
+            _dynamicImg.layer.cornerRadius = 10.0
+            _dynamicImg.layer.masksToBounds = true
         }
-        return _chaseImg
+        return _dynamicImg
     }
-    var _chaseTitle: UILabel!
+    var _dynamicTitle: UILabel!
     var dynamicTitle: UILabel {
-        if _chaseTitle == nil {
-            _chaseTitle = UILabel()
-            _chaseTitle.font = UIFont.systemFontOfSize(12)
-            _chaseTitle.numberOfLines = 2
+        if _dynamicTitle == nil {
+            _dynamicTitle = UILabel()
+            _dynamicTitle.font = UIFont.systemFontOfSize(12)
+            _dynamicTitle.numberOfLines = 2
         }
-        return _chaseTitle
+        return _dynamicTitle
+    }
+    
+    var _dynamicVideos: DynamicVideoModel!
+    var dynamicVideos: DynamicVideoModel {
+        get {
+            return _dynamicVideos
+        }
+        set {
+            _dynamicVideos = newValue
+            _dynamicImg.sd_setImageWithURL(NSURL(string: newValue.cover!), placeholderImage: UIImage(named: "default_img"))
+            _dynamicTitle.text = newValue.title            
+        }
     }
     
 }

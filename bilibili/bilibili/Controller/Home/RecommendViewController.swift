@@ -54,7 +54,7 @@ class RecommendViewController: UIViewController {
             layout.itemSize = CGSizeMake(SCREEN_WIDTH*0.47, SCREEN_HEIGHT*0.23)
             layout.sectionInset = UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0)
             _recommendCollection = UICollectionView(frame: CGRectZero, collectionViewLayout: layout)
-            _recommendCollection.backgroundColor = UIColor.whiteColor()
+            _recommendCollection.backgroundColor = YYBackgroundColor
             //添加下拉刷新 （带有最后刷新的时间）
             let header = MJRefreshNormalHeader(refreshingBlock: {
                 self.recommendViewHelper?.recManager?.loadData()

@@ -109,7 +109,7 @@ class BangumiViewCell: UICollectionViewCell {
         }
         set {
             _firstModel = newValue
-            bangumiImg.sd_setImageWithURL(NSURL(string: newValue.cover!))
+            bangumiImg.sd_setImageWithURL(NSURL(string: newValue.cover!), placeholderImage: UIImage(named: "default_img"))
             bangumiTitle.text = newValue.title
             infoTitle.text = String.init(format: "%d人在看", newValue.watching_count!)
             newestTitle.text = String.init(format: "更新至第%@话", newValue.newest_ep_index!)

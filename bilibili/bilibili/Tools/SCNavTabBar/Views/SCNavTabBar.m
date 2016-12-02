@@ -76,12 +76,13 @@
 
 - (void)showLineWithButtonWidth:(CGFloat)width
 {
-    _line = [[UIView alloc] initWithFrame:CGRectMake(2.0f, NAV_TAB_BAR_HEIGHT - 3.0f, width - 4.0f, 3.0f)];
+    _line = [[UIView alloc] initWithFrame:CGRectMake(10.0f, NAV_TAB_BAR_HEIGHT - 3.0f, width - 20.0f, 3.0f)];
     /**
      *  设置下划线颜色
      */
 //    _line.backgroundColor = UIColorWithRGBA(20.0f, 80.0f, 200.0f, 0.7f);
-    _line.backgroundColor = [UIColor colorWithRed:222/255.0 green:168/255.0 blue:94/255.0 alpha:0.8];
+//    _line.backgroundColor = [UIColor colorWithRed:222/255.0 green:168/255.0 blue:94/255.0 alpha:0.8];
+    _line.backgroundColor = [UIColor whiteColor];
     [_navgationTabBar addSubview:_line];
 }
 
@@ -234,7 +235,7 @@
     }
     
     [UIView animateWithDuration:0.2f animations:^{
-        _line.frame = CGRectMake(button.frame.origin.x + 2.0f, _line.frame.origin.y, [_itemsWidth[currentItemIndex] floatValue] - 4.0f, _line.frame.size.height);
+        _line.frame = CGRectMake(button.frame.origin.x + 10.0f, _line.frame.origin.y, [_itemsWidth[currentItemIndex] floatValue] - 20.0f, _line.frame.size.height);
     }];
 }
 

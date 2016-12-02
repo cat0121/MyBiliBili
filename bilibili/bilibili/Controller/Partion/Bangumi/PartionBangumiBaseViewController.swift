@@ -46,6 +46,7 @@ class PartionBangumiBaseViewController: UIViewController {
     var allCartoonTable: UITableView {
         if _allCartoonTable == nil {
             _allCartoonTable = UITableView()
+            _allCartoonTable.backgroundColor = YYBackgroundColor
             _allCartoonTable.rowHeight = SCREEN_HEIGHT*0.14
             _allCartoonTable.delegate = self
             _allCartoonTable.dataSource = self

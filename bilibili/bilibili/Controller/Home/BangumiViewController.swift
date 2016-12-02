@@ -50,7 +50,7 @@ class BangumiViewController: UIViewController {
             let layout = UICollectionViewFlowLayout()
             layout.itemSize = CGSizeMake(SCREEN_WIDTH*0.29, SCREEN_HEIGHT*0.31)
             _bangumiCollection = UICollectionView(frame: CGRectZero, collectionViewLayout: layout)
-            _bangumiCollection.backgroundColor = UIColor.whiteColor()
+            _bangumiCollection.backgroundColor = YYBackgroundColor
             //添加下拉刷新 （带有最后刷新的时间）
             let header = MJRefreshNormalHeader(refreshingBlock: {
                 self.bangumiHelper?.bangumiManager?.loadData()

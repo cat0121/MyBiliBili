@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class BannerDetailViewController: UIViewController {
     
@@ -74,9 +75,10 @@ class BannerDetailViewController: UIViewController {
 
 extension BannerDetailViewController: UIWebViewDelegate {
     func webViewDidStartLoad(webView: UIWebView) {
-        
+        MBProgressHUD.showHUDAddedTo(webView, animated: true)
     }
     func webViewDidFinishLoad(webView: UIWebView) {
+        MBProgressHUD.hideHUDForView(webView, animated: true)
         
         let actualSize = webView.sizeThatFits(CGSizeZero)
         var newFrame = webView.frame
@@ -85,5 +87,9 @@ extension BannerDetailViewController: UIWebViewDelegate {
         
         let newSize = CGSize(width: SCREEN_WIDTH, height: webView.frame.size.height+365)
         webView.scrollView.contentSize = newSize
+    }
+    
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
+        MBProgressHUD.hideHUDForView(webView, animated: true)
     }
 }

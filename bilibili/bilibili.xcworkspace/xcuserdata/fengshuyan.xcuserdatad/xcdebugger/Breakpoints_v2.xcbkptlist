@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "bilibili/NetWorkCenter/Partion/Cartoon/CartoonRecommend/CartoonRecommendReformer.swift"
-            timestampString = "501587769.586148"
+            filePath = "bilibili/NetWorkCenter/Attention/Dynamic/ChaseViewHelper.swift"
+            timestampString = "502341145.224196"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "reformData(_:data:)"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "ApiManager(_:failedWithError:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

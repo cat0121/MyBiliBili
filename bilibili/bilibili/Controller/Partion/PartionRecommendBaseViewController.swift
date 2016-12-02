@@ -38,7 +38,7 @@ class PartionRecommendBaseViewController: UIViewController {
             let layout = UICollectionViewFlowLayout()
             layout.itemSize = CGSize(width: SCREEN_WIDTH*0.47, height: SCREEN_HEIGHT*0.23)
             _partionRecTableview = UICollectionView(frame: CGRectZero, collectionViewLayout: layout)
-            _partionRecTableview.backgroundColor = UIColor.whiteColor()
+            _partionRecTableview.backgroundColor = YYBackgroundColor
             //代理
             _partionRecTableview.delegate = self
             _partionRecTableview.dataSource = self

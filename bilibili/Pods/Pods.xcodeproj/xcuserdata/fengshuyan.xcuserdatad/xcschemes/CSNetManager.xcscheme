@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '60404DFE2354817FF2299FB8'
+               BlueprintIdentifier = '40F0BF61D4F04B32906284A98C269B75'
                BlueprintName = 'CSNetManager'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'CSNetManager.framework'>

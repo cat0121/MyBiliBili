@@ -35,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = YYMain_Color
         //将状态栏变为白色
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent;
+        UIApplication.sharedApplication().statusBarHidden = true
     }
     /**
      开启网络监控

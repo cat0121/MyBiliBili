@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-protocol SBCollectionViewDelegateFlowLayout: UICollectionViewDelegateFlowLayout {
+protocol  YYCollectionViewDelegateFlowLayout: UICollectionViewDelegateFlowLayout {
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, backgroundColorForSectionAt section: Int) -> UIColor
 }
 
-extension SBCollectionViewDelegateFlowLayout {
+extension YYCollectionViewDelegateFlowLayout {
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, backgroundColorForSectionAt section: Int) -> UIColor {
         return UIColor.clearColor()
@@ -42,7 +42,7 @@ class YYCollectionViewFlowLayout: UICollectionViewFlowLayout {
         super.prepareLayout()
         
         guard let numberOfSections = self.collectionView?.numberOfSections(),
-            let delegate = self.collectionView?.delegate as? SBCollectionViewDelegateFlowLayout
+            let delegate = self.collectionView?.delegate as? YYCollectionViewDelegateFlowLayout
             else {
                 return
         }

@@ -28,14 +28,9 @@ class CSRequestGenerator: NSObject {
     
     class func generateRequestWithAPI(api: CSAPIBaseManager, method: Alamofire.Method, params: [String: AnyObject]) -> Request {
         // 网络请求的参数格式处理，获取请求的Request
-        var request: Request!
-        if method == .POST {
-            request = Manager.sharedInstance.request(method, api.apiURLString(), parameters: ["json":NSData.jsonString(params)!], encoding: .URL, headers: nil)
-        }else {
-            request = Manager.sharedInstance.request(method, api.apiURLString(), parameters: params, encoding: .URL, headers: nil)
-        }
+//        let request = Manager.sharedInstance.request(method, api.apiURLString(), parameters: params, encoding: .URL, headers: nil)
+        let request = Manager.sharedInstance.request(method, api.apiURLString(), parameters: ["json":NSData.jsonString(params)!], encoding: .URL, headers: nil)
         return request
-
     }
 }
 

@@ -145,7 +145,7 @@ class LiveViewCell: UICollectionViewCell {
         }
         set {
             _pationsModel = newValue
-            liveImage.sd_setImageWithURL(NSURL(string: newValue.srcImage!))
+            liveImage.sd_setImageWithURL(NSURL(string: newValue.srcImage!),placeholderImage: UIImage(named: "default_img"))
             liveTitle.text = newValue.title
             watchNum.text = String(format: "%d", newValue.online!)
             authorTitle.text = newValue.authorName

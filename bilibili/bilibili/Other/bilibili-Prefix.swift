@@ -12,3 +12,4 @@ let SCREEN_WIDTH = UIScreen.mainScreen().bounds.size.width
 let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.size.height
 
 let YYMain_Color = UIColor(red: 243/255.0, green: 88/255.0, blue: 133/255.0, alpha: 1)
+let YYBackgroundColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1)

@@ -60,7 +60,7 @@ class PartionViewController: UIViewController {
             let layout = UICollectionViewFlowLayout()
             layout.itemSize = CGSize(width: SCREEN_WIDTH*0.3, height: SCREEN_HEIGHT*0.15)
             _partionCollectionView = UICollectionView(frame: CGRectZero, collectionViewLayout: layout)
-            _partionCollectionView.backgroundColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1)
+            _partionCollectionView.backgroundColor = YYBackgroundColor
             _partionCollectionView.delegate = self
             _partionCollectionView.dataSource = self
             
