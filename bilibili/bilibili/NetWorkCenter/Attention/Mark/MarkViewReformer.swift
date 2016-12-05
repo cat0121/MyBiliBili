@@ -22,7 +22,7 @@ class MarkViewReformer: CSReformer {
                 additionArr.append(additionModel)
             }
             
-            let markModel = MarkModel(additions: additionArr, page: dataJSON["page"]["num"].intValue)
+            let markModel = MarkModel(additions: additionArr)
             return markModel
         }
         return MarkModel()

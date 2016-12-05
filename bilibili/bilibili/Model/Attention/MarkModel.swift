@@ -15,7 +15,7 @@ class MarkModel: NSObject {
     override init() {
         super.init()
     }
-    init(additions: [AdditionModel], page: Int) {
+    init(additions: [AdditionModel]) {
         self.additions = additions
     }
 }

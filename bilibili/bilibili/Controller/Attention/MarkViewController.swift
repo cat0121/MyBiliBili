@@ -7,12 +7,15 @@
 //
 //http://api.bilibili.com/x/feed/pull?access_key=5f71dfc1dbf6748eb346181690c50df2&actionKey=appkey&appkey=27eb53fc9058f8c3&build=3970&device=phone&mobi_app=iphone&platform=ios&pn=1&ps=20&sign=e5feee8f0cfab2090979dab87e17c782&ts=1480569537&type=2
 
+
 import UIKit
+import MJRefresh
 
 class MarkViewController: UIViewController {
     
     var markHelper: MarkViewHelper?
     var markDataSource: MarkModel?
+    var page = 1
     
     //MARK: -- life cycle
     override func viewDidLoad() {
@@ -53,6 +56,18 @@ class MarkViewController: UIViewController {
             //代理
             _markTableView.delegate = self
             _markTableView.dataSource = self
+            
+            let header = MJRefreshNormalHeader(refreshingBlock: { 
+                self.markHelper?.markManager?.loadData()
+            })
+            _markTableView.mj_header = header
+            
+            let footer = MJRefreshAutoNormalFooter(refreshingBlock: {
+                self.markHelper?.markModel?.page = self.page
+                self.markHelper?.markManager?.loadData()
+                self.page += 1
+            })
+            _markTableView.mj_footer = footer
             //注册
             _markTableView.registerClass(MarkViewCell.self, forCellReuseIdentifier: "markCell")
         }
@@ -108,6 +123,8 @@ extension MarkViewController: MarkViewCallBackDelegate {
     func callBackSuccess() {
         markDataSource = markHelper?.markModel
         markTableView.reloadData()
+        markTableView.mj_header.endRefreshing()
+        markTableView.mj_footer.endRefreshing()
     }
     func callBackFailure() {
         

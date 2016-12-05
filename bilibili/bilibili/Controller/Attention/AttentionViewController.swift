@@ -32,4 +32,7 @@ class AttentionViewController: UIViewController {
         sdnav.addParentController(self)
         
     }
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
 }

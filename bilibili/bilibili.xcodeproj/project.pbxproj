@@ -13,6 +13,10 @@
 		F905829C1DE6BB4A0003C440 /* MarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F905829B1DE6BB4A0003C440 /* MarkViewController.swift */; };
 		F90582A31DE6E1F60003C440 /* DynamicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90582A21DE6E1F60003C440 /* DynamicViewCell.swift */; };
 		F90582A51DE6E2190003C440 /* DynamicViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90582A41DE6E2190003C440 /* DynamicViewHeader.swift */; };
+		F90B97161DF55333004BA4B8 /* EveryoneSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B97151DF55333004BA4B8 /* EveryoneSearchManager.swift */; };
+		F90B97181DF5534B004BA4B8 /* EveryoneSearchReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B97171DF5534B004BA4B8 /* EveryoneSearchReformer.swift */; };
+		F90B971D1DF5541C004BA4B8 /* EveryonSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B971C1DF5541C004BA4B8 /* EveryonSearchModel.swift */; };
+		F90B97201DF5563A004BA4B8 /* SearchViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B971F1DF5563A004BA4B8 /* SearchViewHelper.swift */; };
 		F925211F1DD1946A00D8E45C /* BangumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F925211E1DD1946A00D8E45C /* BangumiViewController.swift */; };
 		F925212D1DD1995200D8E45C /* SCNavTabBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F92521241DD1995200D8E45C /* SCNavTabBar.bundle */; };
 		F925212E1DD1995200D8E45C /* SCNavTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92521271DD1995200D8E45C /* SCNavTabBarController.m */; };
@@ -190,6 +194,10 @@
 		F905829B1DE6BB4A0003C440 /* MarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkViewController.swift; sourceTree = "<group>"; };
 		F90582A21DE6E1F60003C440 /* DynamicViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicViewCell.swift; sourceTree = "<group>"; };
 		F90582A41DE6E2190003C440 /* DynamicViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicViewHeader.swift; sourceTree = "<group>"; };
+		F90B97151DF55333004BA4B8 /* EveryoneSearchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryoneSearchManager.swift; sourceTree = "<group>"; };
+		F90B97171DF5534B004BA4B8 /* EveryoneSearchReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryoneSearchReformer.swift; sourceTree = "<group>"; };
+		F90B971C1DF5541C004BA4B8 /* EveryonSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryonSearchModel.swift; sourceTree = "<group>"; };
+		F90B971F1DF5563A004BA4B8 /* SearchViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewHelper.swift; sourceTree = "<group>"; };
 		F925211E1DD1946A00D8E45C /* BangumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiViewController.swift; sourceTree = "<group>"; };
 		F92521231DD1995200D8E45C /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
 		F92521241DD1995200D8E45C /* SCNavTabBar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SCNavTabBar.bundle; sourceTree = "<group>"; };
@@ -405,6 +413,31 @@
 			path = Dynamic;
 			sourceTree = "<group>";
 		};
+		F90B97121DF5529C004BA4B8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F90B97151DF55333004BA4B8 /* EveryoneSearchManager.swift */,
+				F90B97171DF5534B004BA4B8 /* EveryoneSearchReformer.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F90B971B1DF55403004BA4B8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F90B971C1DF5541C004BA4B8 /* EveryonSearchModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F90B971E1DF55612004BA4B8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F90B971F1DF5563A004BA4B8 /* SearchViewHelper.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		F92521221DD1995200D8E45C /* SCNavTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +546,7 @@
 				F9665FBF1DE2C88A0060D6F8 /* Home */,
 				F9D450B11DD44C9D00EC4B64 /* Partion */,
 				F9ACD7DF1DEFEE9600F535E4 /* Attention */,
+				F90B971B1DF55403004BA4B8 /* Search */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -909,6 +943,7 @@
 				F9941AA21DD30AEE00603838 /* Home */,
 				F9665FB51DE2C1BA0060D6F8 /* Partion */,
 				F9ACD7D11DEFECDE00F535E4 /* Attention */,
+				F90B97121DF5529C004BA4B8 /* Search */,
 				F9B240841DD40DBA0089824D /* NetServerConfig.swift */,
 			);
 			path = NetWorkCenter;
@@ -957,6 +992,7 @@
 				F99A947F1DE80D8B00AE4282 /* Attention */,
 				F9665FAF1DE2C0520060D6F8 /* Partion */,
 				F9941AA81DD30AEE00603838 /* Home */,
+				F90B971E1DF55612004BA4B8 /* Search */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1462,6 +1498,7 @@
 				F9A447A11DE6AF3200E8BB6B /* ThreeAllManager.swift in Sources */,
 				F935BC721DE5741F0074DA05 /* ShortFilmAllManager.swift in Sources */,
 				F9A447A31DE6AF7300E8BB6B /* ThreeViewHelper.swift in Sources */,
+				F90B97161DF55333004BA4B8 /* EveryoneSearchManager.swift in Sources */,
 				F9FBBA771DF13B1D002C310F /* MarkViewReformer.swift in Sources */,
 				F964555D1DDC0488007D3EE1 /* BangumiViewManager.swift in Sources */,
 				F9C586871DE586F0002DD704 /* SynthesisAllManager.swift in Sources */,
@@ -1496,6 +1533,7 @@
 				F9A4479D1DE6ACED00E8BB6B /* OriginalAllManager.swift in Sources */,
 				F99A3D4B1DE44CFA00587685 /* InfomationViewManager.swift in Sources */,
 				F9665FC81DE2C88A0060D6F8 /* RecommendModel.swift in Sources */,
+				F90B97181DF5534B004BA4B8 /* EveryoneSearchReformer.swift in Sources */,
 				F9A4477F1DE6869B00E8BB6B /* MusicRepriseViewManager.swift in Sources */,
 				F9B3E0601DE598810094AB34 /* PartionRecommendBaseViewController.swift in Sources */,
 				F935BC6E1DE572810074DA05 /* MMDAllManager.swift in Sources */,
@@ -1528,7 +1566,9 @@
 				F9A447811DE6873B00E8BB6B /* MusicRepriseViewHelper.swift in Sources */,
 				F9C9CA601DD42303003F2340 /* YAlertViewController.swift in Sources */,
 				F97B79731DD0706B00F35DC3 /* AttentionViewController.swift in Sources */,
+				F90B971D1DF5541C004BA4B8 /* EveryonSearchModel.swift in Sources */,
 				F9A447851DE68D3600E8BB6B /* VOCALOIDViewHelper.swift in Sources */,
+				F90B97201DF5563A004BA4B8 /* SearchViewHelper.swift in Sources */,
 				F9FBBA821DF144AD002C310F /* MarkViewCell.swift in Sources */,
 				F90582981DE6BA330003C440 /* ChaseViewController.swift in Sources */,
 				F926E8471DD0510400AB28B8 /* AppDelegate.swift in Sources */,
@@ -1718,6 +1758,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = YY.bilibili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yan/简书swift/bilibili/bilibili/Other/bilibili-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1731,6 +1772,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = YY.bilibili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yan/简书swift/bilibili/bilibili/Other/bilibili-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

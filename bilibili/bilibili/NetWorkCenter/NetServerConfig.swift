@@ -30,3 +30,8 @@ public let aServer = CSServer(serverType: ServerType.OnLine,
                               offline: "",
                               prepareOnLine: "",
                               localLine: "")
+public let sServer = CSServer(serverType: ServerType.OnLine,
+                              online: "http://s.search.bilibili.com",
+                              offline: "",
+                              prepareOnLine: "",
+                              localLine: "")
