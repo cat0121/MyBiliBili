@@ -52,6 +52,7 @@
 		F9665FCE1DE2C9630060D6F8 /* PartionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9665FCC1DE2C9630060D6F8 /* PartionViewCell.swift */; };
 		F9665FD01DE2C9900060D6F8 /* SerialCartoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9665FCF1DE2C9900060D6F8 /* SerialCartoonModel.swift */; };
 		F9665FD21DE2E3F60060D6F8 /* SerialCartoonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9665FD11DE2E3F60060D6F8 /* SerialCartoonHeaderView.swift */; };
+		F96DDEC71DF6C4DA00851D70 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96DDEC61DF6C4D900851D70 /* SearchResultViewController.swift */; };
 		F9709E9B1DDEC8C8002DCE48 /* PartionBangumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9709E981DDEC8C8002DCE48 /* PartionBangumiViewController.swift */; };
 		F9709E9C1DDEC8C8002DCE48 /* SerialCartoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9709E991DDEC8C8002DCE48 /* SerialCartoonViewController.swift */; };
 		F9709E9D1DDEC8C8002DCE48 /* PartionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9709E9A1DDEC8C8002DCE48 /* PartionViewController.swift */; };
@@ -244,6 +245,7 @@
 		F9665FCC1DE2C9630060D6F8 /* PartionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartionViewCell.swift; sourceTree = "<group>"; };
 		F9665FCF1DE2C9900060D6F8 /* SerialCartoonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialCartoonModel.swift; sourceTree = "<group>"; };
 		F9665FD11DE2E3F60060D6F8 /* SerialCartoonHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialCartoonHeaderView.swift; sourceTree = "<group>"; };
+		F96DDEC61DF6C4D900851D70 /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		F9709E981DDEC8C8002DCE48 /* PartionBangumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartionBangumiViewController.swift; sourceTree = "<group>"; };
 		F9709E991DDEC8C8002DCE48 /* SerialCartoonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialCartoonViewController.swift; sourceTree = "<group>"; };
 		F9709E9A1DDEC8C8002DCE48 /* PartionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartionViewController.swift; sourceTree = "<group>"; };
@@ -618,6 +620,7 @@
 			isa = PBXGroup;
 			children = (
 				F97B797A1DD071A700F35DC3 /* SearchViewController.swift */,
+				F96DDEC61DF6C4D900851D70 /* SearchResultViewController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -1608,6 +1611,7 @@
 				F99A3D411DE434F200587685 /* ChinaCartoonViewHelper.swift in Sources */,
 				F9B3E0691DE5A2420094AB34 /* BangumiRecommendViewController.swift in Sources */,
 				F9A447A51DE6B0C100E8BB6B /* MusicSetViewManager.swift in Sources */,
+				F96DDEC71DF6C4DA00851D70 /* SearchResultViewController.swift in Sources */,
 				F9ACD7E31DEFEEEE00F535E4 /* DynamicModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
