@@ -46,6 +46,7 @@
 		F92C224F1E03D69400BE9B54 /* SearchSynthesisViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C22441E03D69400BE9B54 /* SearchSynthesisViewManager.swift */; };
 		F92C22501E03D69400BE9B54 /* SearchSynthesisViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C22451E03D69400BE9B54 /* SearchSynthesisViewReformer.swift */; };
 		F92C22511E03D69400BE9B54 /* SearchUPViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C22471E03D69400BE9B54 /* SearchUPViewReformer.swift */; };
+		F92C22531E03F3DC00BE9B54 /* SearchUPViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C22521E03F3DC00BE9B54 /* SearchUPViewCell.swift */; };
 		F935BC6C1DE572530074DA05 /* MMDViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935BC6B1DE572530074DA05 /* MMDViewManager.swift */; };
 		F935BC6E1DE572810074DA05 /* MMDAllManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935BC6D1DE572810074DA05 /* MMDAllManager.swift */; };
 		F935BC701DE574090074DA05 /* ShortFilmViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935BC6F1DE574090074DA05 /* ShortFilmViewManager.swift */; };
@@ -261,6 +262,7 @@
 		F92C22441E03D69400BE9B54 /* SearchSynthesisViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSynthesisViewManager.swift; sourceTree = "<group>"; };
 		F92C22451E03D69400BE9B54 /* SearchSynthesisViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSynthesisViewReformer.swift; sourceTree = "<group>"; };
 		F92C22471E03D69400BE9B54 /* SearchUPViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUPViewReformer.swift; sourceTree = "<group>"; };
+		F92C22521E03F3DC00BE9B54 /* SearchUPViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUPViewCell.swift; sourceTree = "<group>"; };
 		F935BC6B1DE572530074DA05 /* MMDViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDViewManager.swift; sourceTree = "<group>"; };
 		F935BC6D1DE572810074DA05 /* MMDAllManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDAllManager.swift; sourceTree = "<group>"; };
 		F935BC6F1DE574090074DA05 /* ShortFilmViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortFilmViewManager.swift; sourceTree = "<group>"; };
@@ -1408,6 +1410,7 @@
 		F9BF99771DFFC42100DE62DC /* UP */ = {
 			isa = PBXGroup;
 			children = (
+				F92C22521E03F3DC00BE9B54 /* SearchUPViewCell.swift */,
 			);
 			path = UP;
 			sourceTree = "<group>";
@@ -1774,6 +1777,7 @@
 				F9FBBA7E1DF13F8F002C310F /* DynamicViewHelper.swift in Sources */,
 				F9A447811DE6873B00E8BB6B /* MusicRepriseViewHelper.swift in Sources */,
 				F92C22491E03D69400BE9B54 /* SearchMoiveViewReformer.swift in Sources */,
+				F92C22531E03F3DC00BE9B54 /* SearchUPViewCell.swift in Sources */,
 				F9C9CA601DD42303003F2340 /* YAlertViewController.swift in Sources */,
 				F97B79731DD0706B00F35DC3 /* AttentionViewController.swift in Sources */,
 				F90B971D1DF5541C004BA4B8 /* EveryonSearchModel.swift in Sources */,
