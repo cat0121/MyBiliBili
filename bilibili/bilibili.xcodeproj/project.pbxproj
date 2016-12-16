@@ -13,10 +13,10 @@
 		F905829C1DE6BB4A0003C440 /* MarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F905829B1DE6BB4A0003C440 /* MarkViewController.swift */; };
 		F90582A31DE6E1F60003C440 /* DynamicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90582A21DE6E1F60003C440 /* DynamicViewCell.swift */; };
 		F90582A51DE6E2190003C440 /* DynamicViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90582A41DE6E2190003C440 /* DynamicViewHeader.swift */; };
-		F90B97161DF55333004BA4B8 /* EveryoneSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B97151DF55333004BA4B8 /* EveryoneSearchManager.swift */; };
-		F90B97181DF5534B004BA4B8 /* EveryoneSearchReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B97171DF5534B004BA4B8 /* EveryoneSearchReformer.swift */; };
+		F90B20221DFFD36900D03804 /* SearchSynthesisViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B20211DFFD36900D03804 /* SearchSynthesisViewHelper.swift */; };
 		F90B971D1DF5541C004BA4B8 /* EveryonSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B971C1DF5541C004BA4B8 /* EveryonSearchModel.swift */; };
 		F90B97201DF5563A004BA4B8 /* SearchViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B971F1DF5563A004BA4B8 /* SearchViewHelper.swift */; };
+		F915FC191E03CE3E001DCBB3 /* SearchClassifiyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915FC181E03CE3E001DCBB3 /* SearchClassifiyModel.swift */; };
 		F925211F1DD1946A00D8E45C /* BangumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F925211E1DD1946A00D8E45C /* BangumiViewController.swift */; };
 		F925212D1DD1995200D8E45C /* SCNavTabBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F92521241DD1995200D8E45C /* SCNavTabBar.bundle */; };
 		F925212E1DD1995200D8E45C /* SCNavTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92521271DD1995200D8E45C /* SCNavTabBarController.m */; };
@@ -30,6 +30,22 @@
 		F926E8471DD0510400AB28B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F926E8431DD0510400AB28B8 /* AppDelegate.swift */; };
 		F926E8481DD0510400AB28B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F926E8441DD0510400AB28B8 /* ViewController.swift */; };
 		F926E8501DD057B500AB28B8 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F926E84F1DD057B500AB28B8 /* MainTabBarController.swift */; };
+		F9278B281DF90F1B00B5F3A4 /* SearchBangumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9278B1F1DF90F1B00B5F3A4 /* SearchBangumiViewController.swift */; };
+		F9278B291DF90F1B00B5F3A4 /* SearchMoiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9278B211DF90F1B00B5F3A4 /* SearchMoiveViewController.swift */; };
+		F9278B2A1DF90F1B00B5F3A4 /* SearchSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9278B231DF90F1B00B5F3A4 /* SearchSubjectViewController.swift */; };
+		F9278B2B1DF90F1B00B5F3A4 /* SearchSynthesisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9278B251DF90F1B00B5F3A4 /* SearchSynthesisViewController.swift */; };
+		F9278B2C1DF90F1B00B5F3A4 /* SearchUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9278B271DF90F1B00B5F3A4 /* SearchUPViewController.swift */; };
+		F92C22311E03D37400BE9B54 /* SearchBangumiViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C22301E03D37400BE9B54 /* SearchBangumiViewHelper.swift */; };
+		F92C22481E03D69400BE9B54 /* SearchBangumiViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C22391E03D69400BE9B54 /* SearchBangumiViewReformer.swift */; };
+		F92C22491E03D69400BE9B54 /* SearchMoiveViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C223B1E03D69400BE9B54 /* SearchMoiveViewReformer.swift */; };
+		F92C224A1E03D69400BE9B54 /* EveryoneSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C223D1E03D69400BE9B54 /* EveryoneSearchManager.swift */; };
+		F92C224B1E03D69400BE9B54 /* EveryoneSearchReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C223E1E03D69400BE9B54 /* EveryoneSearchReformer.swift */; };
+		F92C224C1E03D69400BE9B54 /* FuzzySearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C223F1E03D69400BE9B54 /* FuzzySearchManager.swift */; };
+		F92C224D1E03D69400BE9B54 /* FuzzySearchReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C22401E03D69400BE9B54 /* FuzzySearchReformer.swift */; };
+		F92C224E1E03D69400BE9B54 /* SearchSubjectViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C22421E03D69400BE9B54 /* SearchSubjectViewReformer.swift */; };
+		F92C224F1E03D69400BE9B54 /* SearchSynthesisViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C22441E03D69400BE9B54 /* SearchSynthesisViewManager.swift */; };
+		F92C22501E03D69400BE9B54 /* SearchSynthesisViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C22451E03D69400BE9B54 /* SearchSynthesisViewReformer.swift */; };
+		F92C22511E03D69400BE9B54 /* SearchUPViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C22471E03D69400BE9B54 /* SearchUPViewReformer.swift */; };
 		F935BC6C1DE572530074DA05 /* MMDViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935BC6B1DE572530074DA05 /* MMDViewManager.swift */; };
 		F935BC6E1DE572810074DA05 /* MMDAllManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935BC6D1DE572810074DA05 /* MMDAllManager.swift */; };
 		F935BC701DE574090074DA05 /* ShortFilmViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935BC6F1DE574090074DA05 /* ShortFilmViewManager.swift */; };
@@ -52,6 +68,8 @@
 		F9665FCE1DE2C9630060D6F8 /* PartionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9665FCC1DE2C9630060D6F8 /* PartionViewCell.swift */; };
 		F9665FD01DE2C9900060D6F8 /* SerialCartoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9665FCF1DE2C9900060D6F8 /* SerialCartoonModel.swift */; };
 		F9665FD21DE2E3F60060D6F8 /* SerialCartoonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9665FD11DE2E3F60060D6F8 /* SerialCartoonHeaderView.swift */; };
+		F96811551DF80E2B007168C0 /* SearchClassifiyViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96811541DF80E2B007168C0 /* SearchClassifiyViewManager.swift */; };
+		F96811591DF80EEF007168C0 /* SearchSynthesisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96811581DF80EEF007168C0 /* SearchSynthesisModel.swift */; };
 		F96DDEC71DF6C4DA00851D70 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96DDEC61DF6C4D900851D70 /* SearchResultViewController.swift */; };
 		F9709E9B1DDEC8C8002DCE48 /* PartionBangumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9709E981DDEC8C8002DCE48 /* PartionBangumiViewController.swift */; };
 		F9709E9C1DDEC8C8002DCE48 /* SerialCartoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9709E991DDEC8C8002DCE48 /* SerialCartoonViewController.swift */; };
@@ -129,6 +147,8 @@
 		F9ACD7E11DEFEEE100F535E4 /* ChaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7E01DEFEEE100F535E4 /* ChaseModel.swift */; };
 		F9ACD7E31DEFEEEE00F535E4 /* DynamicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7E21DEFEEEE00F535E4 /* DynamicModel.swift */; };
 		F9ACD7E51DEFEEFA00F535E4 /* MarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7E41DEFEEFA00F535E4 /* MarkModel.swift */; };
+		F9B088F21DF7DA1900FCFFAC /* FuzzySearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B088F11DF7DA1900FCFFAC /* FuzzySearchModel.swift */; };
+		F9B088F41DF7DE4D00FCFFAC /* SearchResultViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B088F31DF7DE4D00FCFFAC /* SearchResultViewHelper.swift */; };
 		F9B240851DD40DBA0089824D /* NetServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B240841DD40DBA0089824D /* NetServerConfig.swift */; };
 		F9B240881DD413670089824D /* RecommendViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B240871DD413670089824D /* RecommendViewCell.swift */; };
 		F9B2408A1DD413860089824D /* RecommendViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B240891DD413860089824D /* RecommendViewHeader.swift */; };
@@ -138,6 +158,7 @@
 		F9B3E0691DE5A2420094AB34 /* BangumiRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B3E0681DE5A2420094AB34 /* BangumiRecommendViewController.swift */; };
 		F9B3E06B1DE5A3200094AB34 /* BangumiRecViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B3E06A1DE5A3200094AB34 /* BangumiRecViewHelper.swift */; };
 		F9B3E06E1DE5A3B70094AB34 /* BangumiRecViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B3E06D1DE5A3B70094AB34 /* BangumiRecViewManager.swift */; };
+		F9BF99791DFFC47300DE62DC /* SearchSynthesisViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BF99781DFFC47300DE62DC /* SearchSynthesisViewCell.swift */; };
 		F9C586871DE586F0002DD704 /* SynthesisAllManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C586861DE586F0002DD704 /* SynthesisAllManager.swift */; };
 		F9C5868A1DE58CA8002DD704 /* PartionMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C586891DE58CA8002DD704 /* PartionMusicViewController.swift */; };
 		F9C5868C1DE58CF6002DD704 /* MusicRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C5868B1DE58CF6002DD704 /* MusicRecommendViewController.swift */; };
@@ -152,6 +173,7 @@
 		F9C9CA5C1DD41800003F2340 /* RecommendViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C9CA5B1DD41800003F2340 /* RecommendViewReformer.swift */; };
 		F9C9CA5E1DD41D3A003F2340 /* RecommendViewHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C9CA5D1DD41D3A003F2340 /* RecommendViewHepler.swift */; };
 		F9C9CA601DD42303003F2340 /* YAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C9CA5F1DD42303003F2340 /* YAlertViewController.swift */; };
+		F9CA11E71E038D5B00C93DA6 /* SearchSynthesisViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CA11E61E038D5A00C93DA6 /* SearchSynthesisViewHeader.swift */; };
 		F9DEDC301DDAAE6500224BB4 /* LiveViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DEDC2F1DDAAE6500224BB4 /* LiveViewCell.swift */; };
 		F9DEDC321DDAF6BE00224BB4 /* LiveHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DEDC311DDAF6BD00224BB4 /* LiveHeaderView.swift */; };
 		F9E45E421DD9AEC10034B359 /* RecommendViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E45E411DD9AEC00034B359 /* RecommendViewFooter.swift */; };
@@ -195,10 +217,10 @@
 		F905829B1DE6BB4A0003C440 /* MarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkViewController.swift; sourceTree = "<group>"; };
 		F90582A21DE6E1F60003C440 /* DynamicViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicViewCell.swift; sourceTree = "<group>"; };
 		F90582A41DE6E2190003C440 /* DynamicViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicViewHeader.swift; sourceTree = "<group>"; };
-		F90B97151DF55333004BA4B8 /* EveryoneSearchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryoneSearchManager.swift; sourceTree = "<group>"; };
-		F90B97171DF5534B004BA4B8 /* EveryoneSearchReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryoneSearchReformer.swift; sourceTree = "<group>"; };
+		F90B20211DFFD36900D03804 /* SearchSynthesisViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSynthesisViewHelper.swift; sourceTree = "<group>"; };
 		F90B971C1DF5541C004BA4B8 /* EveryonSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryonSearchModel.swift; sourceTree = "<group>"; };
 		F90B971F1DF5563A004BA4B8 /* SearchViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewHelper.swift; sourceTree = "<group>"; };
+		F915FC181E03CE3E001DCBB3 /* SearchClassifiyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchClassifiyModel.swift; sourceTree = "<group>"; };
 		F925211E1DD1946A00D8E45C /* BangumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiViewController.swift; sourceTree = "<group>"; };
 		F92521231DD1995200D8E45C /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
 		F92521241DD1995200D8E45C /* SCNavTabBar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SCNavTabBar.bundle; sourceTree = "<group>"; };
@@ -223,6 +245,22 @@
 		F926E8431DD0510400AB28B8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F926E8441DD0510400AB28B8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F926E84F1DD057B500AB28B8 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		F9278B1F1DF90F1B00B5F3A4 /* SearchBangumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBangumiViewController.swift; sourceTree = "<group>"; };
+		F9278B211DF90F1B00B5F3A4 /* SearchMoiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMoiveViewController.swift; sourceTree = "<group>"; };
+		F9278B231DF90F1B00B5F3A4 /* SearchSubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSubjectViewController.swift; sourceTree = "<group>"; };
+		F9278B251DF90F1B00B5F3A4 /* SearchSynthesisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSynthesisViewController.swift; sourceTree = "<group>"; };
+		F9278B271DF90F1B00B5F3A4 /* SearchUPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUPViewController.swift; sourceTree = "<group>"; };
+		F92C22301E03D37400BE9B54 /* SearchBangumiViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBangumiViewHelper.swift; sourceTree = "<group>"; };
+		F92C22391E03D69400BE9B54 /* SearchBangumiViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBangumiViewReformer.swift; sourceTree = "<group>"; };
+		F92C223B1E03D69400BE9B54 /* SearchMoiveViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMoiveViewReformer.swift; sourceTree = "<group>"; };
+		F92C223D1E03D69400BE9B54 /* EveryoneSearchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryoneSearchManager.swift; sourceTree = "<group>"; };
+		F92C223E1E03D69400BE9B54 /* EveryoneSearchReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryoneSearchReformer.swift; sourceTree = "<group>"; };
+		F92C223F1E03D69400BE9B54 /* FuzzySearchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuzzySearchManager.swift; sourceTree = "<group>"; };
+		F92C22401E03D69400BE9B54 /* FuzzySearchReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuzzySearchReformer.swift; sourceTree = "<group>"; };
+		F92C22421E03D69400BE9B54 /* SearchSubjectViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSubjectViewReformer.swift; sourceTree = "<group>"; };
+		F92C22441E03D69400BE9B54 /* SearchSynthesisViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSynthesisViewManager.swift; sourceTree = "<group>"; };
+		F92C22451E03D69400BE9B54 /* SearchSynthesisViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSynthesisViewReformer.swift; sourceTree = "<group>"; };
+		F92C22471E03D69400BE9B54 /* SearchUPViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUPViewReformer.swift; sourceTree = "<group>"; };
 		F935BC6B1DE572530074DA05 /* MMDViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDViewManager.swift; sourceTree = "<group>"; };
 		F935BC6D1DE572810074DA05 /* MMDAllManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDAllManager.swift; sourceTree = "<group>"; };
 		F935BC6F1DE574090074DA05 /* ShortFilmViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortFilmViewManager.swift; sourceTree = "<group>"; };
@@ -245,6 +283,8 @@
 		F9665FCC1DE2C9630060D6F8 /* PartionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartionViewCell.swift; sourceTree = "<group>"; };
 		F9665FCF1DE2C9900060D6F8 /* SerialCartoonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialCartoonModel.swift; sourceTree = "<group>"; };
 		F9665FD11DE2E3F60060D6F8 /* SerialCartoonHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialCartoonHeaderView.swift; sourceTree = "<group>"; };
+		F96811541DF80E2B007168C0 /* SearchClassifiyViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchClassifiyViewManager.swift; sourceTree = "<group>"; };
+		F96811581DF80EEF007168C0 /* SearchSynthesisModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSynthesisModel.swift; sourceTree = "<group>"; };
 		F96DDEC61DF6C4D900851D70 /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		F9709E981DDEC8C8002DCE48 /* PartionBangumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartionBangumiViewController.swift; sourceTree = "<group>"; };
 		F9709E991DDEC8C8002DCE48 /* SerialCartoonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialCartoonViewController.swift; sourceTree = "<group>"; };
@@ -322,6 +362,8 @@
 		F9ACD7E01DEFEEE100F535E4 /* ChaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaseModel.swift; sourceTree = "<group>"; };
 		F9ACD7E21DEFEEEE00F535E4 /* DynamicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicModel.swift; sourceTree = "<group>"; };
 		F9ACD7E41DEFEEFA00F535E4 /* MarkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkModel.swift; sourceTree = "<group>"; };
+		F9B088F11DF7DA1900FCFFAC /* FuzzySearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuzzySearchModel.swift; sourceTree = "<group>"; };
+		F9B088F31DF7DE4D00FCFFAC /* SearchResultViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewHelper.swift; sourceTree = "<group>"; };
 		F9B240841DD40DBA0089824D /* NetServerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetServerConfig.swift; sourceTree = "<group>"; };
 		F9B240871DD413670089824D /* RecommendViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewCell.swift; sourceTree = "<group>"; };
 		F9B240891DD413860089824D /* RecommendViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewHeader.swift; sourceTree = "<group>"; };
@@ -331,6 +373,7 @@
 		F9B3E0681DE5A2420094AB34 /* BangumiRecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiRecommendViewController.swift; sourceTree = "<group>"; };
 		F9B3E06A1DE5A3200094AB34 /* BangumiRecViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiRecViewHelper.swift; sourceTree = "<group>"; };
 		F9B3E06D1DE5A3B70094AB34 /* BangumiRecViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiRecViewManager.swift; sourceTree = "<group>"; };
+		F9BF99781DFFC47300DE62DC /* SearchSynthesisViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSynthesisViewCell.swift; sourceTree = "<group>"; };
 		F9C586861DE586F0002DD704 /* SynthesisAllManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynthesisAllManager.swift; sourceTree = "<group>"; };
 		F9C586891DE58CA8002DD704 /* PartionMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartionMusicViewController.swift; sourceTree = "<group>"; };
 		F9C5868B1DE58CF6002DD704 /* MusicRecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicRecommendViewController.swift; sourceTree = "<group>"; };
@@ -345,6 +388,7 @@
 		F9C9CA5B1DD41800003F2340 /* RecommendViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewReformer.swift; sourceTree = "<group>"; };
 		F9C9CA5D1DD41D3A003F2340 /* RecommendViewHepler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewHepler.swift; sourceTree = "<group>"; };
 		F9C9CA5F1DD42303003F2340 /* YAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAlertViewController.swift; sourceTree = "<group>"; };
+		F9CA11E61E038D5A00C93DA6 /* SearchSynthesisViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSynthesisViewHeader.swift; sourceTree = "<group>"; };
 		F9DEDC2F1DDAAE6500224BB4 /* LiveViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewCell.swift; sourceTree = "<group>"; };
 		F9DEDC311DDAF6BD00224BB4 /* LiveHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveHeaderView.swift; sourceTree = "<group>"; };
 		F9E45E411DD9AEC00034B359 /* RecommendViewFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewFooter.swift; sourceTree = "<group>"; };
@@ -418,8 +462,13 @@
 		F90B97121DF5529C004BA4B8 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				F90B97151DF55333004BA4B8 /* EveryoneSearchManager.swift */,
-				F90B97171DF5534B004BA4B8 /* EveryoneSearchReformer.swift */,
+				F92C223C1E03D69400BE9B54 /* SearchView */,
+				F92C22431E03D69400BE9B54 /* Synthesis */,
+				F92C22381E03D69400BE9B54 /* Bangumi */,
+				F92C22461E03D69400BE9B54 /* UP */,
+				F92C223A1E03D69400BE9B54 /* Moive */,
+				F92C22411E03D69400BE9B54 /* Subject */,
+				F96811541DF80E2B007168C0 /* SearchClassifiyViewManager.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -428,6 +477,9 @@
 			isa = PBXGroup;
 			children = (
 				F90B971C1DF5541C004BA4B8 /* EveryonSearchModel.swift */,
+				F9B088F11DF7DA1900FCFFAC /* FuzzySearchModel.swift */,
+				F96811581DF80EEF007168C0 /* SearchSynthesisModel.swift */,
+				F915FC181E03CE3E001DCBB3 /* SearchClassifiyModel.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -436,6 +488,9 @@
 			isa = PBXGroup;
 			children = (
 				F90B971F1DF5563A004BA4B8 /* SearchViewHelper.swift */,
+				F9B088F31DF7DE4D00FCFFAC /* SearchResultViewHelper.swift */,
+				F90B20211DFFD36900D03804 /* SearchSynthesisViewHelper.swift */,
+				F92C22301E03D37400BE9B54 /* SearchBangumiViewHelper.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -576,11 +631,11 @@
 		F926E8461DD0510400AB28B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F976997C1DD2C56D007B85B7 /* Home */,
 				F9665FC91DE2C9630060D6F8 /* Partion */,
 				F976997B1DD2C56D007B85B7 /* Attention */,
-				F976997C1DD2C56D007B85B7 /* Home */,
+				F9BF99721DFFC42100DE62DC /* Search */,
 				F976997D1DD2C56D007B85B7 /* Mine */,
-				F976997E1DD2C56D007B85B7 /* Search */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -619,6 +674,11 @@
 		F926E84D1DD0573400AB28B8 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				F9278B1E1DF90F1B00B5F3A4 /* Bangumi */,
+				F9278B201DF90F1B00B5F3A4 /* Moive */,
+				F9278B221DF90F1B00B5F3A4 /* Subject */,
+				F9278B241DF90F1B00B5F3A4 /* Synthesis */,
+				F9278B261DF90F1B00B5F3A4 /* UP主 */,
 				F97B797A1DD071A700F35DC3 /* SearchViewController.swift */,
 				F96DDEC61DF6C4D900851D70 /* SearchResultViewController.swift */,
 			);
@@ -631,6 +691,98 @@
 				F926E84F1DD057B500AB28B8 /* MainTabBarController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		F9278B1E1DF90F1B00B5F3A4 /* Bangumi */ = {
+			isa = PBXGroup;
+			children = (
+				F9278B1F1DF90F1B00B5F3A4 /* SearchBangumiViewController.swift */,
+			);
+			path = Bangumi;
+			sourceTree = "<group>";
+		};
+		F9278B201DF90F1B00B5F3A4 /* Moive */ = {
+			isa = PBXGroup;
+			children = (
+				F9278B211DF90F1B00B5F3A4 /* SearchMoiveViewController.swift */,
+			);
+			path = Moive;
+			sourceTree = "<group>";
+		};
+		F9278B221DF90F1B00B5F3A4 /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				F9278B231DF90F1B00B5F3A4 /* SearchSubjectViewController.swift */,
+			);
+			path = Subject;
+			sourceTree = "<group>";
+		};
+		F9278B241DF90F1B00B5F3A4 /* Synthesis */ = {
+			isa = PBXGroup;
+			children = (
+				F9278B251DF90F1B00B5F3A4 /* SearchSynthesisViewController.swift */,
+			);
+			path = Synthesis;
+			sourceTree = "<group>";
+		};
+		F9278B261DF90F1B00B5F3A4 /* UP主 */ = {
+			isa = PBXGroup;
+			children = (
+				F9278B271DF90F1B00B5F3A4 /* SearchUPViewController.swift */,
+			);
+			path = "UP主";
+			sourceTree = "<group>";
+		};
+		F92C22381E03D69400BE9B54 /* Bangumi */ = {
+			isa = PBXGroup;
+			children = (
+				F92C22391E03D69400BE9B54 /* SearchBangumiViewReformer.swift */,
+			);
+			path = Bangumi;
+			sourceTree = "<group>";
+		};
+		F92C223A1E03D69400BE9B54 /* Moive */ = {
+			isa = PBXGroup;
+			children = (
+				F92C223B1E03D69400BE9B54 /* SearchMoiveViewReformer.swift */,
+			);
+			path = Moive;
+			sourceTree = "<group>";
+		};
+		F92C223C1E03D69400BE9B54 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				F92C223D1E03D69400BE9B54 /* EveryoneSearchManager.swift */,
+				F92C223E1E03D69400BE9B54 /* EveryoneSearchReformer.swift */,
+				F92C223F1E03D69400BE9B54 /* FuzzySearchManager.swift */,
+				F92C22401E03D69400BE9B54 /* FuzzySearchReformer.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		F92C22411E03D69400BE9B54 /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				F92C22421E03D69400BE9B54 /* SearchSubjectViewReformer.swift */,
+			);
+			path = Subject;
+			sourceTree = "<group>";
+		};
+		F92C22431E03D69400BE9B54 /* Synthesis */ = {
+			isa = PBXGroup;
+			children = (
+				F92C22441E03D69400BE9B54 /* SearchSynthesisViewManager.swift */,
+				F92C22451E03D69400BE9B54 /* SearchSynthesisViewReformer.swift */,
+			);
+			path = Synthesis;
+			sourceTree = "<group>";
+		};
+		F92C22461E03D69400BE9B54 /* UP */ = {
+			isa = PBXGroup;
+			children = (
+				F92C22471E03D69400BE9B54 /* SearchUPViewReformer.swift */,
+			);
+			path = UP;
 			sourceTree = "<group>";
 		};
 		F9665FAF1DE2C0520060D6F8 /* Partion */ = {
@@ -794,13 +946,6 @@
 			children = (
 			);
 			path = Mine;
-			sourceTree = "<group>";
-		};
-		F976997E1DD2C56D007B85B7 /* Search */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Search;
 			sourceTree = "<group>";
 		};
 		F9838BE41DE5361B009AE2C1 /* Cartoon */ = {
@@ -1218,6 +1363,55 @@
 			path = BangumiRec;
 			sourceTree = "<group>";
 		};
+		F9BF99721DFFC42100DE62DC /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F9BF99731DFFC42100DE62DC /* Bangumi */,
+				F9BF99741DFFC42100DE62DC /* Moive */,
+				F9BF99751DFFC42100DE62DC /* Subject */,
+				F9BF99761DFFC42100DE62DC /* Synthesis */,
+				F9BF99771DFFC42100DE62DC /* UP */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F9BF99731DFFC42100DE62DC /* Bangumi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bangumi;
+			sourceTree = "<group>";
+		};
+		F9BF99741DFFC42100DE62DC /* Moive */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Moive;
+			sourceTree = "<group>";
+		};
+		F9BF99751DFFC42100DE62DC /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subject;
+			sourceTree = "<group>";
+		};
+		F9BF99761DFFC42100DE62DC /* Synthesis */ = {
+			isa = PBXGroup;
+			children = (
+				F9BF99781DFFC47300DE62DC /* SearchSynthesisViewCell.swift */,
+				F9CA11E61E038D5A00C93DA6 /* SearchSynthesisViewHeader.swift */,
+			);
+			path = Synthesis;
+			sourceTree = "<group>";
+		};
+		F9BF99771DFFC42100DE62DC /* UP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UP;
+			sourceTree = "<group>";
+		};
 		F9C586881DE58C88002DD704 /* Music */ = {
 			isa = PBXGroup;
 			children = (
@@ -1463,10 +1657,13 @@
 			files = (
 				F925212E1DD1995200D8E45C /* SCNavTabBarController.m in Sources */,
 				F99A3D4F1DE44DDE00587685 /* InfomationAllManager.swift in Sources */,
+				F96811591DF80EEF007168C0 /* SearchSynthesisModel.swift in Sources */,
 				F94C36A01DED4BA4002FA904 /* BannerDetailViewController.swift in Sources */,
 				F9A4478B1DE6929400E8BB6B /* PlayMusicViewManager.swift in Sources */,
+				F92C224A1E03D69400BE9B54 /* EveryoneSearchManager.swift in Sources */,
 				F98809751DE4113B003DE611 /* SerialAllManager.swift in Sources */,
 				F90582A31DE6E1F60003C440 /* DynamicViewCell.swift in Sources */,
+				F9278B2A1DF90F1B00B5F3A4 /* SearchSubjectViewController.swift in Sources */,
 				F9B3E0671DE59B850094AB34 /* MusicRecViewHelper.swift in Sources */,
 				F9C9CA5C1DD41800003F2340 /* RecommendViewReformer.swift in Sources */,
 				F9E45E461DD9C44D0034B359 /* LiveViewReformer.swift in Sources */,
@@ -1478,6 +1675,7 @@
 				F9665FB91DE2C1BA0060D6F8 /* PartionViewManager.swift in Sources */,
 				F9665FC61DE2C88A0060D6F8 /* BangumiModel.swift in Sources */,
 				F9838BF01DE538F4009AE2C1 /* SynthesisViewController.swift in Sources */,
+				F92C224B1E03D69400BE9B54 /* EveryoneSearchReformer.swift in Sources */,
 				F9665FB41DE2C1610060D6F8 /* SerialCartoonViewHelper.swift in Sources */,
 				F9E45E481DD9C7380034B359 /* LiveViewHelper.swift in Sources */,
 				F9A4478D1DE6931200E8BB6B /* PlayMusicAllManager.swift in Sources */,
@@ -1485,6 +1683,7 @@
 				F9C586941DE58DE1002DD704 /* OPViewController.swift in Sources */,
 				F98809801DE412AE003DE611 /* EndCartoonViewHelper.swift in Sources */,
 				F9C5869A1DE5913A002DD704 /* MusicSetViewController.swift in Sources */,
+				F92C22501E03D69400BE9B54 /* SearchSynthesisViewReformer.swift in Sources */,
 				F925211F1DD1946A00D8E45C /* BangumiViewController.swift in Sources */,
 				F9709EA51DDECACF002DCE48 /* OfficalViewController.swift in Sources */,
 				F9665FB11DE2C0530060D6F8 /* PartionViewHelper.swift in Sources */,
@@ -1495,18 +1694,20 @@
 				F9E45E441DD9C4320034B359 /* LiveViewManager.swift in Sources */,
 				F9C9CA5A1DD417EB003F2340 /* RecommendViewManager.swift in Sources */,
 				F935BC761DE581740074DA05 /* SynthesisViewManager.swift in Sources */,
+				F92C22511E03D69400BE9B54 /* SearchUPViewReformer.swift in Sources */,
+				F9278B281DF90F1B00B5F3A4 /* SearchBangumiViewController.swift in Sources */,
 				F9FBBA731DF1216D002C310F /* ChaseViewCell.swift in Sources */,
 				F9838C041DE56CD2009AE2C1 /* MMDViewHelper.swift in Sources */,
 				F9A447891DE68D5900E8BB6B /* VOCALOIDAllManager.swift in Sources */,
 				F9A447A11DE6AF3200E8BB6B /* ThreeAllManager.swift in Sources */,
 				F935BC721DE5741F0074DA05 /* ShortFilmAllManager.swift in Sources */,
 				F9A447A31DE6AF7300E8BB6B /* ThreeViewHelper.swift in Sources */,
-				F90B97161DF55333004BA4B8 /* EveryoneSearchManager.swift in Sources */,
 				F9FBBA771DF13B1D002C310F /* MarkViewReformer.swift in Sources */,
 				F964555D1DDC0488007D3EE1 /* BangumiViewManager.swift in Sources */,
 				F9C586871DE586F0002DD704 /* SynthesisAllManager.swift in Sources */,
 				F9A447911DE694EC00E8BB6B /* PlayMusicViewHelper.swift in Sources */,
 				F99A3D511DE452A000587685 /* OfficalViewHelper.swift in Sources */,
+				F9278B2C1DF90F1B00B5F3A4 /* SearchUPViewController.swift in Sources */,
 				F9A4479B1DE6ACC400E8BB6B /* OriginalviewManager.swift in Sources */,
 				F99A94811DE8120E00AE4282 /* DynamicViewLayout.swift in Sources */,
 				F90582A51DE6E2190003C440 /* DynamicViewHeader.swift in Sources */,
@@ -1514,9 +1715,12 @@
 				F9A447931DE6973100E8BB6B /* OPViewManager.swift in Sources */,
 				F935BC6C1DE572530074DA05 /* MMDViewManager.swift in Sources */,
 				F9665FD01DE2C9900060D6F8 /* SerialCartoonModel.swift in Sources */,
+				F915FC191E03CE3E001DCBB3 /* SearchClassifiyModel.swift in Sources */,
 				F9838C0C1DE56E25009AE2C1 /* MADAllManager.swift in Sources */,
 				F9ACD7DE1DEFEE7400F535E4 /* DynamicViewReformer.swift in Sources */,
+				F9B088F21DF7DA1900FCFFAC /* FuzzySearchModel.swift in Sources */,
 				F9C9CA5E1DD41D3A003F2340 /* RecommendViewHepler.swift in Sources */,
+				F9278B2B1DF90F1B00B5F3A4 /* SearchSynthesisViewController.swift in Sources */,
 				F9838BEE1DE538A2009AE2C1 /* ShortFilmViewController.swift in Sources */,
 				F9A447831DE6888100E8BB6B /* MusicRepriseAllManager.swift in Sources */,
 				F98809781DE4113B003DE611 /* SericalCartoonViewManager.swift in Sources */,
@@ -1525,18 +1729,19 @@
 				F98809761DE4113B003DE611 /* SerialAllReformer.swift in Sources */,
 				F9838BF31DE53FF8009AE2C1 /* CartoonRecommendViewHelper.swift in Sources */,
 				F9B2408A1DD413860089824D /* RecommendViewHeader.swift in Sources */,
+				F92C224D1E03D69400BE9B54 /* FuzzySearchReformer.swift in Sources */,
 				F9C5868A1DE58CA8002DD704 /* PartionMusicViewController.swift in Sources */,
 				F98809771DE4113B003DE611 /* SerialCartoonViewReformer.swift in Sources */,
 				F9A447951DE6993D00E8BB6B /* OPAllManager.swift in Sources */,
 				F99A3D471DE436BF00587685 /* ChinaAllManager.swift in Sources */,
 				F9838BE61DE53655009AE2C1 /* CartoonRecommendViewController.swift in Sources */,
+				F9B088F41DF7DE4D00FCFFAC /* SearchResultViewHelper.swift in Sources */,
 				F96304131DDC66BA00B0F1F7 /* BangumiViewHeader.swift in Sources */,
 				F9B240881DD413670089824D /* RecommendViewCell.swift in Sources */,
 				F9838C001DE54302009AE2C1 /* CartoonRecommendModel.swift in Sources */,
 				F9A4479D1DE6ACED00E8BB6B /* OriginalAllManager.swift in Sources */,
 				F99A3D4B1DE44CFA00587685 /* InfomationViewManager.swift in Sources */,
 				F9665FC81DE2C88A0060D6F8 /* RecommendModel.swift in Sources */,
-				F90B97181DF5534B004BA4B8 /* EveryoneSearchReformer.swift in Sources */,
 				F9A4477F1DE6869B00E8BB6B /* MusicRepriseViewManager.swift in Sources */,
 				F9B3E0601DE598810094AB34 /* PartionRecommendBaseViewController.swift in Sources */,
 				F935BC6E1DE572810074DA05 /* MMDAllManager.swift in Sources */,
@@ -1561,17 +1766,20 @@
 				F905829C1DE6BB4A0003C440 /* MarkViewController.swift in Sources */,
 				F9ACD7DA1DEFEDE700F535E4 /* ChaseViewReformer.swift in Sources */,
 				F9838BE81DE5367F009AE2C1 /* PartionCartoonViewController.swift in Sources */,
+				F92C22311E03D37400BE9B54 /* SearchBangumiViewHelper.swift in Sources */,
 				F9ACD7E11DEFEEE100F535E4 /* ChaseModel.swift in Sources */,
 				F9FBBA751DF13A4F002C310F /* MarkViewManager.swift in Sources */,
 				F9838BEA1DE5380F009AE2C1 /* MADViewController.swift in Sources */,
 				F9838BEC1DE53841009AE2C1 /* MMDViewController.swift in Sources */,
 				F9FBBA7E1DF13F8F002C310F /* DynamicViewHelper.swift in Sources */,
 				F9A447811DE6873B00E8BB6B /* MusicRepriseViewHelper.swift in Sources */,
+				F92C22491E03D69400BE9B54 /* SearchMoiveViewReformer.swift in Sources */,
 				F9C9CA601DD42303003F2340 /* YAlertViewController.swift in Sources */,
 				F97B79731DD0706B00F35DC3 /* AttentionViewController.swift in Sources */,
 				F90B971D1DF5541C004BA4B8 /* EveryonSearchModel.swift in Sources */,
 				F9A447851DE68D3600E8BB6B /* VOCALOIDViewHelper.swift in Sources */,
 				F90B97201DF5563A004BA4B8 /* SearchViewHelper.swift in Sources */,
+				F9278B291DF90F1B00B5F3A4 /* SearchMoiveViewController.swift in Sources */,
 				F9FBBA821DF144AD002C310F /* MarkViewCell.swift in Sources */,
 				F90582981DE6BA330003C440 /* ChaseViewController.swift in Sources */,
 				F926E8471DD0510400AB28B8 /* AppDelegate.swift in Sources */,
@@ -1581,17 +1789,21 @@
 				F988097E1DE411ED003DE611 /* EndCartoonViewManager.swift in Sources */,
 				F9F91AC81DDC035100E3CD8B /* BangumiViewHelper.swift in Sources */,
 				F9C586901DE58D50002DD704 /* VOCALOIDViewController.swift in Sources */,
+				F92C22481E03D69400BE9B54 /* SearchBangumiViewReformer.swift in Sources */,
 				F9665FCE1DE2C9630060D6F8 /* PartionViewCell.swift in Sources */,
+				F90B20221DFFD36900D03804 /* SearchSynthesisViewHelper.swift in Sources */,
 				F9709E9B1DDEC8C8002DCE48 /* PartionBangumiViewController.swift in Sources */,
 				F9709E9C1DDEC8C8002DCE48 /* SerialCartoonViewController.swift in Sources */,
 				F9C586961DE59053002DD704 /* OriginalViewController.swift in Sources */,
 				F9ACD7E51DEFEEFA00F535E4 /* MarkModel.swift in Sources */,
+				F9BF99791DFFC47300DE62DC /* SearchSynthesisViewCell.swift in Sources */,
 				F9838C081DE56D2C009AE2C1 /* SynthesisViewHelper.swift in Sources */,
 				F9A447A71DE6B0D400E8BB6B /* MusicSetAllManager.swift in Sources */,
 				F98809861DE428AB003DE611 /* PartionBangumiBaseViewController.swift in Sources */,
 				F9B3E06E1DE5A3B70094AB34 /* BangumiRecViewManager.swift in Sources */,
 				F96455631DDC507E007D3EE1 /* BangumiViewCell.swift in Sources */,
 				F9709E9D1DDEC8C8002DCE48 /* PartionViewController.swift in Sources */,
+				F92C224C1E03D69400BE9B54 /* FuzzySearchManager.swift in Sources */,
 				F99A3D531DE452BF00587685 /* OfficalViewManager.swift in Sources */,
 				F99A3D551DE452D300587685 /* OfficalAllManager.swift in Sources */,
 				F926E8501DD057B500AB28B8 /* MainTabBarController.swift in Sources */,
@@ -1599,6 +1811,8 @@
 				F9665FCD1DE2C9630060D6F8 /* SerialCartoonViewCell.swift in Sources */,
 				F935BC701DE574090074DA05 /* ShortFilmViewManager.swift in Sources */,
 				F9A4479F1DE6AF2300E8BB6B /* ThreeViewManager.swift in Sources */,
+				F92C224F1E03D69400BE9B54 /* SearchSynthesisViewManager.swift in Sources */,
+				F92C224E1E03D69400BE9B54 /* SearchSubjectViewReformer.swift in Sources */,
 				F92521301DD1995200D8E45C /* SCPopView.m in Sources */,
 				F964555F1DDC04D1007D3EE1 /* BangumiViewReformer.swift in Sources */,
 				F9DEDC321DDAF6BE00224BB4 /* LiveHeaderView.swift in Sources */,
@@ -1611,8 +1825,10 @@
 				F99A3D411DE434F200587685 /* ChinaCartoonViewHelper.swift in Sources */,
 				F9B3E0691DE5A2420094AB34 /* BangumiRecommendViewController.swift in Sources */,
 				F9A447A51DE6B0C100E8BB6B /* MusicSetViewManager.swift in Sources */,
+				F96811551DF80E2B007168C0 /* SearchClassifiyViewManager.swift in Sources */,
 				F96DDEC71DF6C4DA00851D70 /* SearchResultViewController.swift in Sources */,
 				F9ACD7E31DEFEEEE00F535E4 /* DynamicModel.swift in Sources */,
+				F9CA11E71E038D5B00C93DA6 /* SearchSynthesisViewHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

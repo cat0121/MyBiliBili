@@ -5,6 +5,7 @@
 //  Created by fengshuyan on 2016/11/7.
 //  Copyright © 2016年 yan. All rights reserved.
 //
+//大家都在搜：http://s.search.bilibili.com/main/hotword?access_key=5f71dfc1dbf6748eb346181690c50df2&actionKey=appkey&appkey=27eb53fc9058f8c3&build=3970&device=phone&mobi_app=iphone&platform=ios&sign=7d062f11c90aeb6f39da5b6ad91be94a
 
 import UIKit
 
@@ -31,10 +32,16 @@ class SearchViewController: UIViewController {
         
         searchHelper?.everyoneManager?.loadData()
     }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBar.hidden = true
+    }
     
     //MARK: -- event response
-    func valueChange(textField: UITextField) {
-        
+    func buttonClick(sender: UIButton) {
+        let searchResult = SearchResultViewController()
+        self.navigationController?.pushViewController(searchResult, animated: false)
     }
     func scanCode(sender: UIButton) {
         
@@ -48,7 +55,7 @@ class SearchViewController: UIViewController {
             searchScrollView.userInteractionEnabled = true
             searchScrollView.frame.size.height = SCREEN_HEIGHT*0.3
             searchScrollView.contentSize = CGSizeMake(SCREEN_WIDTH, 500)
-            
+        
             moreBtn.frame.origin.y = headerView.frame.maxY - 35
             moreBtn.setTitle("收起", forState: .Normal)
         } else {
@@ -58,7 +65,7 @@ class SearchViewController: UIViewController {
             
             searchScrollView.userInteractionEnabled = false
             searchScrollView.frame.size.height = SCREEN_HEIGHT*0.145
-            
+        
             moreBtn.frame.origin.y = headerView.frame.maxY - 35
             moreBtn.setTitle("查看更多", forState: .Normal)
         }
@@ -66,9 +73,9 @@ class SearchViewController: UIViewController {
     
     //MARK: -- private method
     func initBaseLayout() {
-        self.navigationController?.navigationBar.hidden = true
+        
         self.view.addSubview(headerView)
-        self.headerView.addSubview(searchTextField)
+        self.headerView.addSubview(searchBtn)
         self.headerView.addSubview(scanCodeBtn)
         self.headerView.addSubview(searchLabel)
         self.headerView.addSubview(searchScrollView)
@@ -82,11 +89,11 @@ class SearchViewController: UIViewController {
 //            make.width.equalTo(SCREEN_WIDTH)
 //            make.height.equalTo(SCREEN_HEIGHT*0.33)
 //        }
-        searchTextField.snp_makeConstraints { (make) in
+        searchBtn.snp_makeConstraints { (make) in
             make.left.equalTo(headerView).offset(48)
             make.top.equalTo(headerView).offset(25)
+            make.right.equalTo(headerView).offset(-10)
             make.height.equalTo(SCREEN_HEIGHT*0.045)
-            make.width.equalTo(SCREEN_WIDTH-55)
         }
         scanCodeBtn.snp_makeConstraints { (make) in
             make.left.equalTo(headerView).offset(10)
@@ -127,7 +134,9 @@ class SearchViewController: UIViewController {
         everyoneSearchDataSource = [KeywordModel]()
     }
     
-    //循环创建button
+    /**
+     根据文字循环创建button
+     */
     func createButton() {
         
         if everyoneSearchDataSource?.count > 0 {
@@ -164,32 +173,28 @@ class SearchViewController: UIViewController {
             _headerView = UIView()
             _headerView.backgroundColor = YYMain_Color
             _headerView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT*0.33)
+            _headerView.userInteractionEnabled = true
         }
         return _headerView
     }
  
-    var _searchTextField: UITextField!
-    var searchTextField: UITextField {
-        if _searchTextField == nil {
-            _searchTextField = UITextField()
-            _searchTextField.placeholder = "搜索视频、番剧、up主或AV号"
-            _searchTextField.backgroundColor = UIColor.whiteColor()
-            _searchTextField.borderStyle = .RoundedRect
-            _searchTextField.layer.cornerRadius = 8.0
-            _searchTextField.font = UIFont.systemFontOfSize(15)
-            _searchTextField.textColor = UIColor.blackColor()
-            _searchTextField.returnKeyType = .Search
-            //设置leftView
-            let leftView = UIImageView(image: UIImage(named: "home_discovery_tab"))
-            leftView.frame = CGRectMake(-20, 0, 20, 20)
-            _searchTextField.leftView = leftView
-            _searchTextField.leftViewMode = .Always
+    var _searchBtn: UIButton!
+    var searchBtn: UIButton {
+        if _searchBtn == nil {
+            _searchBtn = UIButton(type: .Custom)
+            _searchBtn.setBackgroundImage(UIImage(named: "classify_sousuo_long_icon"), forState: .Normal)
+            _searchBtn.setTitle("搜索视频、番剧、up主或AV号", forState: .Normal)
+            _searchBtn.setTitleColor(UIColor.lightGrayColor(), forState: .Normal)
+            _searchBtn.titleLabel?.font = UIFont.systemFontOfSize(14)
+            _searchBtn.setImage(UIImage(named: "home_discovery_tab"), forState: .Normal)
+            //设置图片和文字位置
+            _searchBtn.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 5)
+            _searchBtn.imageEdgeInsets = UIEdgeInsetsMake(3, -5, 2, 0)
+
             //点击事件
-            _searchTextField.addTarget(self, action: #selector(SearchViewController.valueChange(_:)), forControlEvents: UIControlEvents.AllEditingEvents)
-            //设置代理
-            _searchTextField.delegate = self
+            _searchBtn.addTarget(self, action: #selector(SearchViewController.buttonClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         }
-        return _searchTextField
+        return _searchBtn
     }
     
     var _scanCodeBtn: UIButton!
@@ -256,10 +261,6 @@ class SearchViewController: UIViewController {
     }
 }
 
-extension SearchViewController: UITextFieldDelegate {
-    
-}
-
 extension SearchViewController: SearchViewCallBackDelegate {
     func callBackSuccess() {
         everyoneSearchDataSource = searchHelper?.everyModel?.keywords
@@ -290,5 +291,9 @@ extension SearchViewController: UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 10
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let searchResult = SearchResultViewController()
+        self.navigationController?.pushViewController(searchResult, animated: false)
     }
 }

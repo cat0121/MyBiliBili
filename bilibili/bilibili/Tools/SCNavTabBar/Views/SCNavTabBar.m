@@ -61,7 +61,7 @@
         _arrowButton.image = _arrowImage;
         _arrowButton.userInteractionEnabled = YES;
         [self addSubview:_arrowButton];
-        [self viewShowShadow:_arrowButton shadowRadius:20.0f shadowOpacity:20.0f];
+//        [self viewShowShadow:_arrowButton shadowRadius:20.0f shadowOpacity:20.0f];
         
         UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(functionButtonPressed)];
         [_arrowButton addGestureRecognizer:tapGestureRecognizer];
@@ -71,7 +71,7 @@
     _navgationTabBar.showsHorizontalScrollIndicator = NO;
     [self addSubview:_navgationTabBar];
     
-    [self viewShowShadow:self shadowRadius:10.0f shadowOpacity:10.0f];
+//    [self viewShowShadow:self shadowRadius:10.0f shadowOpacity:10.0f];
 }
 
 - (void)showLineWithButtonWidth:(CGFloat)width
@@ -176,7 +176,7 @@
 {
     if (pop)
     {
-        [self viewShowShadow:_arrowButton shadowRadius:DOT_COORDINATE shadowOpacity:DOT_COORDINATE];
+//        [self viewShowShadow:_arrowButton shadowRadius:DOT_COORDINATE shadowOpacity:DOT_COORDINATE];
         [UIView animateWithDuration:0.5f animations:^{
             _navgationTabBar.hidden = YES;
             _arrowButton.transform = CGAffineTransformMakeRotation(M_PI);
@@ -200,7 +200,7 @@
             _arrowButton.transform = CGAffineTransformIdentity;
         } completion:^(BOOL finished) {
             _navgationTabBar.hidden = !_navgationTabBar.hidden;
-            [self viewShowShadow:_arrowButton shadowRadius:20.0f shadowOpacity:20.0f];
+//            [self viewShowShadow:_arrowButton shadowRadius:20.0f shadowOpacity:20.0f];
         }];
     }
 }
