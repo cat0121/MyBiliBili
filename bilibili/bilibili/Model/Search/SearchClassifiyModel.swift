@@ -52,10 +52,36 @@ class UPModel: NSObject {
 
 //MARK: -- 电影
 class SearchMoiveModel: NSObject {
-    
+    var keyword: String?
+    var page: Int?
 }
 
+//MARK: -- 专题
 class SearchSubModel: NSObject {
+    var keyword: String?
+    var page: Int?
+    var subjects: [SubModel]?
     
+    override init() {
+        super.init()
+    }
+    init(subjects: [SubModel]) {
+        self.subjects = subjects
+    }
 }
 
+class SubModel: NSObject {
+    var cover: String?
+    var title: String?
+    var desc: String?
+    var play: Int?
+    var archives: Int?
+    
+    init(cover: String, title: String, play: Int, archives: Int, desc: String) {
+        self.cover = cover
+        self.title = title
+        self.play = play
+        self.archives = archives
+        self.desc = desc
+    }
+}

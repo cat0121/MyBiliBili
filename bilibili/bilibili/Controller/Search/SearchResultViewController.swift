@@ -136,6 +136,7 @@ class SearchResultViewController: UIViewController {
         moive.title = "影视"
         let subject = SearchSubjectViewController()
         subject.title = "专题"
+        subject.keyword = keyword
         
         scnav = SCNavTabBarController()
         scnav!.subViewControllers = [searchSynthesis,bangumi,UP,moive,subject]
