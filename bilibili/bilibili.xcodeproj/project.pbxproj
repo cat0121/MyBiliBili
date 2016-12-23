@@ -16,6 +16,7 @@
 		F90B20221DFFD36900D03804 /* SearchSynthesisViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B20211DFFD36900D03804 /* SearchSynthesisViewHelper.swift */; };
 		F90B971D1DF5541C004BA4B8 /* EveryonSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B971C1DF5541C004BA4B8 /* EveryonSearchModel.swift */; };
 		F90B97201DF5563A004BA4B8 /* SearchViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B971F1DF5563A004BA4B8 /* SearchViewHelper.swift */; };
+		F90E2D3C1E0B6B4700E93E91 /* PersonalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E2D3B1E0B6B4700E93E91 /* PersonalInfoView.swift */; };
 		F915FC191E03CE3E001DCBB3 /* SearchClassifiyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915FC181E03CE3E001DCBB3 /* SearchClassifiyModel.swift */; };
 		F925211F1DD1946A00D8E45C /* BangumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F925211E1DD1946A00D8E45C /* BangumiViewController.swift */; };
 		F925212D1DD1995200D8E45C /* SCNavTabBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F92521241DD1995200D8E45C /* SCNavTabBar.bundle */; };
@@ -35,6 +36,9 @@
 		F9278B2A1DF90F1B00B5F3A4 /* SearchSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9278B231DF90F1B00B5F3A4 /* SearchSubjectViewController.swift */; };
 		F9278B2B1DF90F1B00B5F3A4 /* SearchSynthesisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9278B251DF90F1B00B5F3A4 /* SearchSynthesisViewController.swift */; };
 		F9278B2C1DF90F1B00B5F3A4 /* SearchUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9278B271DF90F1B00B5F3A4 /* SearchUPViewController.swift */; };
+		F92A0CC71E08C6210039FE96 /* SearchUPViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92A0CC61E08C6210039FE96 /* SearchUPViewHelper.swift */; };
+		F92A0D071E09206C0039FE96 /* MineViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92A0D061E09206C0039FE96 /* MineViewCell.swift */; };
+		F92A0D091E0936610039FE96 /* MineViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92A0D081E0936610039FE96 /* MineViewHeader.swift */; };
 		F92C22311E03D37400BE9B54 /* SearchBangumiViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C22301E03D37400BE9B54 /* SearchBangumiViewHelper.swift */; };
 		F92C22481E03D69400BE9B54 /* SearchBangumiViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C22391E03D69400BE9B54 /* SearchBangumiViewReformer.swift */; };
 		F92C22491E03D69400BE9B54 /* SearchMoiveViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C223B1E03D69400BE9B54 /* SearchMoiveViewReformer.swift */; };
@@ -52,6 +56,8 @@
 		F935BC701DE574090074DA05 /* ShortFilmViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935BC6F1DE574090074DA05 /* ShortFilmViewManager.swift */; };
 		F935BC721DE5741F0074DA05 /* ShortFilmAllManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935BC711DE5741F0074DA05 /* ShortFilmAllManager.swift */; };
 		F935BC761DE581740074DA05 /* SynthesisViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935BC751DE581740074DA05 /* SynthesisViewManager.swift */; };
+		F942A6AC1E0A2A8E00BDECF3 /* MineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F942A6AB1E0A2A8D00BDECF3 /* MineDetailViewController.swift */; };
+		F942A6AF1E0A2D0F00BDECF3 /* MineViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F942A6AE1E0A2D0F00BDECF3 /* MineViewManager.swift */; };
 		F94C36A01DED4BA4002FA904 /* BannerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94C369F1DED4BA4002FA904 /* BannerDetailViewController.swift */; };
 		F961E5711DDDB72800945F2C /* PartionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961E5701DDDB72800945F2C /* PartionModel.swift */; };
 		F96304131DDC66BA00B0F1F7 /* BangumiViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96304121DDC66BA00B0F1F7 /* BangumiViewHeader.swift */; };
@@ -122,6 +128,7 @@
 		F99A94811DE8120E00AE4282 /* DynamicViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99A94801DE8120E00AE4282 /* DynamicViewLayout.swift */; };
 		F99B0D011DD16CAF00C0DF76 /* bilibili-Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B0D001DD16CAF00C0DF76 /* bilibili-Prefix.swift */; };
 		F99B0D031DD1801500C0DF76 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B0D021DD1801500C0DF76 /* LiveViewController.swift */; };
+		F9A031631E0A587A007C99FF /* MineViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A031621E0A587A007C99FF /* MineViewHelper.swift */; };
 		F9A4477F1DE6869B00E8BB6B /* MusicRepriseViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A4477E1DE6869A00E8BB6B /* MusicRepriseViewManager.swift */; };
 		F9A447811DE6873B00E8BB6B /* MusicRepriseViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A447801DE6873B00E8BB6B /* MusicRepriseViewHelper.swift */; };
 		F9A447831DE6888100E8BB6B /* MusicRepriseAllManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A447821DE6888100E8BB6B /* MusicRepriseAllManager.swift */; };
@@ -177,6 +184,8 @@
 		F9C9CA5E1DD41D3A003F2340 /* RecommendViewHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C9CA5D1DD41D3A003F2340 /* RecommendViewHepler.swift */; };
 		F9C9CA601DD42303003F2340 /* YAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C9CA5F1DD42303003F2340 /* YAlertViewController.swift */; };
 		F9CA11E71E038D5B00C93DA6 /* SearchSynthesisViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CA11E61E038D5A00C93DA6 /* SearchSynthesisViewHeader.swift */; };
+		F9CCDA071E0A48B40040A818 /* MineViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCDA061E0A48B40040A818 /* MineViewReformer.swift */; };
+		F9CCDA0A1E0A4A1B0040A818 /* MineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCDA091E0A4A1B0040A818 /* MineViewModel.swift */; };
 		F9DEDC301DDAAE6500224BB4 /* LiveViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DEDC2F1DDAAE6500224BB4 /* LiveViewCell.swift */; };
 		F9DEDC321DDAF6BE00224BB4 /* LiveHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DEDC311DDAF6BD00224BB4 /* LiveHeaderView.swift */; };
 		F9E45E421DD9AEC10034B359 /* RecommendViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E45E411DD9AEC00034B359 /* RecommendViewFooter.swift */; };
@@ -186,6 +195,10 @@
 		F9E591291E07C55000D2C8F9 /* SearchSubjectViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E591281E07C55000D2C8F9 /* SearchSubjectViewHelper.swift */; };
 		F9E5912B1E07DAB400D2C8F9 /* SubjectDeatilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E5912A1E07DAB400D2C8F9 /* SubjectDeatilViewController.swift */; };
 		F9F91AC81DDC035100E3CD8B /* BangumiViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F91AC71DDC035100E3CD8B /* BangumiViewHelper.swift */; };
+		F9FAB4B01E0D204000407839 /* MineDetailViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB4AF1E0D204000407839 /* MineDetailViewHelper.swift */; };
+		F9FAB4B21E0D205700407839 /* MineInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB4B11E0D205700407839 /* MineInfoManager.swift */; };
+		F9FAB4B41E0D206C00407839 /* MineInfoViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB4B31E0D206C00407839 /* MineInfoViewReformer.swift */; };
+		F9FAB4B61E0D216200407839 /* MineInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB4B51E0D216200407839 /* MineInfoModel.swift */; };
 		F9FBBA731DF1216D002C310F /* ChaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBBA721DF1216D002C310F /* ChaseViewCell.swift */; };
 		F9FBBA751DF13A4F002C310F /* MarkViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBBA741DF13A4F002C310F /* MarkViewManager.swift */; };
 		F9FBBA771DF13B1D002C310F /* MarkViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBBA761DF13B1D002C310F /* MarkViewReformer.swift */; };
@@ -225,6 +238,7 @@
 		F90B20211DFFD36900D03804 /* SearchSynthesisViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSynthesisViewHelper.swift; sourceTree = "<group>"; };
 		F90B971C1DF5541C004BA4B8 /* EveryonSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryonSearchModel.swift; sourceTree = "<group>"; };
 		F90B971F1DF5563A004BA4B8 /* SearchViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewHelper.swift; sourceTree = "<group>"; };
+		F90E2D3B1E0B6B4700E93E91 /* PersonalInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoView.swift; sourceTree = "<group>"; };
 		F915FC181E03CE3E001DCBB3 /* SearchClassifiyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchClassifiyModel.swift; sourceTree = "<group>"; };
 		F925211E1DD1946A00D8E45C /* BangumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiViewController.swift; sourceTree = "<group>"; };
 		F92521231DD1995200D8E45C /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
@@ -255,6 +269,9 @@
 		F9278B231DF90F1B00B5F3A4 /* SearchSubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSubjectViewController.swift; sourceTree = "<group>"; };
 		F9278B251DF90F1B00B5F3A4 /* SearchSynthesisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSynthesisViewController.swift; sourceTree = "<group>"; };
 		F9278B271DF90F1B00B5F3A4 /* SearchUPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUPViewController.swift; sourceTree = "<group>"; };
+		F92A0CC61E08C6210039FE96 /* SearchUPViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUPViewHelper.swift; sourceTree = "<group>"; };
+		F92A0D061E09206C0039FE96 /* MineViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewCell.swift; sourceTree = "<group>"; };
+		F92A0D081E0936610039FE96 /* MineViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewHeader.swift; sourceTree = "<group>"; };
 		F92C22301E03D37400BE9B54 /* SearchBangumiViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBangumiViewHelper.swift; sourceTree = "<group>"; };
 		F92C22391E03D69400BE9B54 /* SearchBangumiViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBangumiViewReformer.swift; sourceTree = "<group>"; };
 		F92C223B1E03D69400BE9B54 /* SearchMoiveViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMoiveViewReformer.swift; sourceTree = "<group>"; };
@@ -272,6 +289,8 @@
 		F935BC6F1DE574090074DA05 /* ShortFilmViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortFilmViewManager.swift; sourceTree = "<group>"; };
 		F935BC711DE5741F0074DA05 /* ShortFilmAllManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortFilmAllManager.swift; sourceTree = "<group>"; };
 		F935BC751DE581740074DA05 /* SynthesisViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynthesisViewManager.swift; sourceTree = "<group>"; };
+		F942A6AB1E0A2A8D00BDECF3 /* MineDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineDetailViewController.swift; sourceTree = "<group>"; };
+		F942A6AE1E0A2D0F00BDECF3 /* MineViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewManager.swift; sourceTree = "<group>"; };
 		F94C369F1DED4BA4002FA904 /* BannerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerDetailViewController.swift; sourceTree = "<group>"; };
 		F961E5701DDDB72800945F2C /* PartionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartionModel.swift; sourceTree = "<group>"; };
 		F96304121DDC66BA00B0F1F7 /* BangumiViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiViewHeader.swift; sourceTree = "<group>"; };
@@ -342,6 +361,7 @@
 		F99A94801DE8120E00AE4282 /* DynamicViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicViewLayout.swift; sourceTree = "<group>"; };
 		F99B0D001DD16CAF00C0DF76 /* bilibili-Prefix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "bilibili-Prefix.swift"; sourceTree = "<group>"; };
 		F99B0D021DD1801500C0DF76 /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		F9A031621E0A587A007C99FF /* MineViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewHelper.swift; sourceTree = "<group>"; };
 		F9A4477E1DE6869A00E8BB6B /* MusicRepriseViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicRepriseViewManager.swift; sourceTree = "<group>"; };
 		F9A447801DE6873B00E8BB6B /* MusicRepriseViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicRepriseViewHelper.swift; sourceTree = "<group>"; };
 		F9A447821DE6888100E8BB6B /* MusicRepriseAllManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicRepriseAllManager.swift; sourceTree = "<group>"; };
@@ -397,6 +417,8 @@
 		F9C9CA5D1DD41D3A003F2340 /* RecommendViewHepler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewHepler.swift; sourceTree = "<group>"; };
 		F9C9CA5F1DD42303003F2340 /* YAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAlertViewController.swift; sourceTree = "<group>"; };
 		F9CA11E61E038D5A00C93DA6 /* SearchSynthesisViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSynthesisViewHeader.swift; sourceTree = "<group>"; };
+		F9CCDA061E0A48B40040A818 /* MineViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewReformer.swift; sourceTree = "<group>"; };
+		F9CCDA091E0A4A1B0040A818 /* MineViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewModel.swift; sourceTree = "<group>"; };
 		F9DEDC2F1DDAAE6500224BB4 /* LiveViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewCell.swift; sourceTree = "<group>"; };
 		F9DEDC311DDAF6BD00224BB4 /* LiveHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveHeaderView.swift; sourceTree = "<group>"; };
 		F9E45E411DD9AEC00034B359 /* RecommendViewFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewFooter.swift; sourceTree = "<group>"; };
@@ -406,6 +428,10 @@
 		F9E591281E07C55000D2C8F9 /* SearchSubjectViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSubjectViewHelper.swift; sourceTree = "<group>"; };
 		F9E5912A1E07DAB400D2C8F9 /* SubjectDeatilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectDeatilViewController.swift; sourceTree = "<group>"; };
 		F9F91AC71DDC035100E3CD8B /* BangumiViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiViewHelper.swift; sourceTree = "<group>"; };
+		F9FAB4AF1E0D204000407839 /* MineDetailViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineDetailViewHelper.swift; sourceTree = "<group>"; };
+		F9FAB4B11E0D205700407839 /* MineInfoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineInfoManager.swift; sourceTree = "<group>"; };
+		F9FAB4B31E0D206C00407839 /* MineInfoViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineInfoViewReformer.swift; sourceTree = "<group>"; };
+		F9FAB4B51E0D216200407839 /* MineInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineInfoModel.swift; sourceTree = "<group>"; };
 		F9FBBA721DF1216D002C310F /* ChaseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaseViewCell.swift; sourceTree = "<group>"; };
 		F9FBBA741DF13A4F002C310F /* MarkViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkViewManager.swift; sourceTree = "<group>"; };
 		F9FBBA761DF13B1D002C310F /* MarkViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkViewReformer.swift; sourceTree = "<group>"; };
@@ -497,6 +523,7 @@
 		F90B971E1DF55612004BA4B8 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				F92A0CC61E08C6210039FE96 /* SearchUPViewHelper.swift */,
 				F90B971F1DF5563A004BA4B8 /* SearchViewHelper.swift */,
 				F9B088F31DF7DE4D00FCFFAC /* SearchResultViewHelper.swift */,
 				F90B20211DFFD36900D03804 /* SearchSynthesisViewHelper.swift */,
@@ -616,6 +643,7 @@
 				F9D450B11DD44C9D00EC4B64 /* Partion */,
 				F9ACD7DF1DEFEE9600F535E4 /* Attention */,
 				F90B971B1DF55403004BA4B8 /* Search */,
+				F9CCDA081E0A49F40040A818 /* Mine */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -679,6 +707,7 @@
 			isa = PBXGroup;
 			children = (
 				F97B79761DD0710000F35DC3 /* MineViewController.swift */,
+				F942A6AB1E0A2A8D00BDECF3 /* MineDetailViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -796,6 +825,17 @@
 				F92C22471E03D69400BE9B54 /* SearchUPViewReformer.swift */,
 			);
 			path = UP;
+			sourceTree = "<group>";
+		};
+		F942A6AD1E0A2CF200BDECF3 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				F942A6AE1E0A2D0F00BDECF3 /* MineViewManager.swift */,
+				F9CCDA061E0A48B40040A818 /* MineViewReformer.swift */,
+				F9FAB4B11E0D205700407839 /* MineInfoManager.swift */,
+				F9FAB4B31E0D206C00407839 /* MineInfoViewReformer.swift */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		F9665FAF1DE2C0520060D6F8 /* Partion */ = {
@@ -957,6 +997,9 @@
 		F976997D1DD2C56D007B85B7 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				F92A0D061E09206C0039FE96 /* MineViewCell.swift */,
+				F92A0D081E0936610039FE96 /* MineViewHeader.swift */,
+				F90E2D3B1E0B6B4700E93E91 /* PersonalInfoView.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -1105,6 +1148,7 @@
 				F9665FB51DE2C1BA0060D6F8 /* Partion */,
 				F9ACD7D11DEFECDE00F535E4 /* Attention */,
 				F90B97121DF5529C004BA4B8 /* Search */,
+				F942A6AD1E0A2CF200BDECF3 /* Mine */,
 				F9B240841DD40DBA0089824D /* NetServerConfig.swift */,
 			);
 			path = NetWorkCenter;
@@ -1154,6 +1198,7 @@
 				F9665FAF1DE2C0520060D6F8 /* Partion */,
 				F9941AA81DD30AEE00603838 /* Home */,
 				F90B971E1DF55612004BA4B8 /* Search */,
+				F9A031611E0A5860007C99FF /* Mine */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1208,6 +1253,15 @@
 				F94C369F1DED4BA4002FA904 /* BannerDetailViewController.swift */,
 			);
 			path = BannerDetail;
+			sourceTree = "<group>";
+		};
+		F9A031611E0A5860007C99FF /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				F9A031621E0A587A007C99FF /* MineViewHelper.swift */,
+				F9FAB4AF1E0D204000407839 /* MineDetailViewHelper.swift */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		F9A447771DE6833E00E8BB6B /* MusicReprise */ = {
@@ -1443,6 +1497,15 @@
 			path = Music;
 			sourceTree = "<group>";
 		};
+		F9CCDA081E0A49F40040A818 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				F9CCDA091E0A4A1B0040A818 /* MineViewModel.swift */,
+				F9FAB4B51E0D216200407839 /* MineInfoModel.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
 		F9D450B11DD44C9D00EC4B64 /* Partion */ = {
 			isa = PBXGroup;
 			children = (
@@ -1671,13 +1734,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F925212E1DD1995200D8E45C /* SCNavTabBarController.m in Sources */,
+				F9CCDA071E0A48B40040A818 /* MineViewReformer.swift in Sources */,
 				F99A3D4F1DE44DDE00587685 /* InfomationAllManager.swift in Sources */,
 				F96811591DF80EEF007168C0 /* SearchSynthesisModel.swift in Sources */,
+				F90E2D3C1E0B6B4700E93E91 /* PersonalInfoView.swift in Sources */,
 				F94C36A01DED4BA4002FA904 /* BannerDetailViewController.swift in Sources */,
 				F9A4478B1DE6929400E8BB6B /* PlayMusicViewManager.swift in Sources */,
 				F92C224A1E03D69400BE9B54 /* EveryoneSearchManager.swift in Sources */,
 				F98809751DE4113B003DE611 /* SerialAllManager.swift in Sources */,
 				F90582A31DE6E1F60003C440 /* DynamicViewCell.swift in Sources */,
+				F9CCDA0A1E0A4A1B0040A818 /* MineViewModel.swift in Sources */,
 				F9278B2A1DF90F1B00B5F3A4 /* SearchSubjectViewController.swift in Sources */,
 				F9B3E0671DE59B850094AB34 /* MusicRecViewHelper.swift in Sources */,
 				F9C9CA5C1DD41800003F2340 /* RecommendViewReformer.swift in Sources */,
@@ -1687,6 +1753,8 @@
 				F98809821DE41C8A003DE611 /* EndAllManager.swift in Sources */,
 				F9E591291E07C55000D2C8F9 /* SearchSubjectViewHelper.swift in Sources */,
 				F961E5711DDDB72800945F2C /* PartionModel.swift in Sources */,
+				F92A0D071E09206C0039FE96 /* MineViewCell.swift in Sources */,
+				F92A0CC71E08C6210039FE96 /* SearchUPViewHelper.swift in Sources */,
 				F925212F1DD1995200D8E45C /* SCNavTabBar.m in Sources */,
 				F9665FB91DE2C1BA0060D6F8 /* PartionViewManager.swift in Sources */,
 				F9665FC61DE2C88A0060D6F8 /* BangumiModel.swift in Sources */,
@@ -1780,6 +1848,8 @@
 				F9838C061DE56CED009AE2C1 /* ShortFilmViewHelper.swift in Sources */,
 				F97B797B1DD071A700F35DC3 /* SearchViewController.swift in Sources */,
 				F9C586981DE59085002DD704 /* ThreeViewController.swift in Sources */,
+				F9FAB4B01E0D204000407839 /* MineDetailViewHelper.swift in Sources */,
+				F9FAB4B61E0D216200407839 /* MineInfoModel.swift in Sources */,
 				F99B0D031DD1801500C0DF76 /* LiveViewController.swift in Sources */,
 				F905829C1DE6BB4A0003C440 /* MarkViewController.swift in Sources */,
 				F9ACD7DA1DEFEDE700F535E4 /* ChaseViewReformer.swift in Sources */,
@@ -1790,8 +1860,11 @@
 				F9838BEA1DE5380F009AE2C1 /* MADViewController.swift in Sources */,
 				F9838BEC1DE53841009AE2C1 /* MMDViewController.swift in Sources */,
 				F9FBBA7E1DF13F8F002C310F /* DynamicViewHelper.swift in Sources */,
+				F92A0D091E0936610039FE96 /* MineViewHeader.swift in Sources */,
 				F9A447811DE6873B00E8BB6B /* MusicRepriseViewHelper.swift in Sources */,
 				F92C22491E03D69400BE9B54 /* SearchMoiveViewReformer.swift in Sources */,
+				F942A6AC1E0A2A8E00BDECF3 /* MineDetailViewController.swift in Sources */,
+				F9FAB4B21E0D205700407839 /* MineInfoManager.swift in Sources */,
 				F92C22531E03F3DC00BE9B54 /* SearchUPViewCell.swift in Sources */,
 				F9E5912B1E07DAB400D2C8F9 /* SubjectDeatilViewController.swift in Sources */,
 				F9C9CA601DD42303003F2340 /* YAlertViewController.swift in Sources */,
@@ -1807,6 +1880,7 @@
 				F9709E9F1DDEC95E002DCE48 /* EndCartoonViewController.swift in Sources */,
 				F9665FD21DE2E3F60060D6F8 /* SerialCartoonHeaderView.swift in Sources */,
 				F988097E1DE411ED003DE611 /* EndCartoonViewManager.swift in Sources */,
+				F9A031631E0A587A007C99FF /* MineViewHelper.swift in Sources */,
 				F9F91AC81DDC035100E3CD8B /* BangumiViewHelper.swift in Sources */,
 				F9C586901DE58D50002DD704 /* VOCALOIDViewController.swift in Sources */,
 				F92C22481E03D69400BE9B54 /* SearchBangumiViewReformer.swift in Sources */,
@@ -1817,6 +1891,7 @@
 				F9C586961DE59053002DD704 /* OriginalViewController.swift in Sources */,
 				F9ACD7E51DEFEEFA00F535E4 /* MarkModel.swift in Sources */,
 				F9BF99791DFFC47300DE62DC /* SearchSynthesisViewCell.swift in Sources */,
+				F942A6AF1E0A2D0F00BDECF3 /* MineViewManager.swift in Sources */,
 				F9838C081DE56D2C009AE2C1 /* SynthesisViewHelper.swift in Sources */,
 				F9A447A71DE6B0D400E8BB6B /* MusicSetAllManager.swift in Sources */,
 				F98809861DE428AB003DE611 /* PartionBangumiBaseViewController.swift in Sources */,
@@ -1836,6 +1911,7 @@
 				F92521301DD1995200D8E45C /* SCPopView.m in Sources */,
 				F964555F1DDC04D1007D3EE1 /* BangumiViewReformer.swift in Sources */,
 				F9DEDC321DDAF6BE00224BB4 /* LiveHeaderView.swift in Sources */,
+				F9FAB4B41E0D206C00407839 /* MineInfoViewReformer.swift in Sources */,
 				F97B79771DD0710000F35DC3 /* MineViewController.swift in Sources */,
 				F9838C0A1DE56D42009AE2C1 /* MADViewManager.swift in Sources */,
 				F9665FBA1DE2C1BA0060D6F8 /* PartionViewReformer.swift in Sources */,

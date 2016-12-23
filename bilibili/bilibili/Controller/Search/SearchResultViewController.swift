@@ -132,6 +132,7 @@ class SearchResultViewController: UIViewController {
         bangumi.keyword = keyword
         let UP = SearchUPViewController()
         UP.title = "UP主"
+        UP.keyword = keyword
         let moive = SearchMoiveViewController()
         moive.title = "影视"
         let subject = SearchSubjectViewController()

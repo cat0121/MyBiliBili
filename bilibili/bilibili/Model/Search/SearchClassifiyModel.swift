@@ -26,6 +26,8 @@ class SearchBanModel: NSObject {
 //MARK: -- UP主
 class SearchUPModel: NSObject {
     var ups: [UPModel]?
+    var keyword: String?
+    var page: Int?
     
     override init() {
         super.init()

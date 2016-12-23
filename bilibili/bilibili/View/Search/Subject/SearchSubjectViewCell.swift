@@ -123,9 +123,7 @@ class SearchSubjectViewCell: UITableViewCell {
             _TitleLab.text = newValue.title
             _archivesLab.text = String.init(format: "视频：%d", newValue.archives!)
             _playLab.text = String.init(format: "播放：%d", newValue.play!)
-            if newValue.desc != nil {
-                _descLab.text = newValue.desc
-            }
+            _descLab.text = newValue.desc
         }
     }
 }
