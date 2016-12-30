@@ -10,25 +10,28 @@ import UIKit
 
 class BangumiViewCell: UICollectionViewCell {
     
+    
+    var gradientLayer: CAGradientLayer!
+    
     //MARK: -- life cycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         initBaseLayout()
         layoutPageSubViews()
+        
+        gradientLayer.frame = CGRectMake(0, SCREEN_HEIGHT*0.22-30, self.contentView.bounds.size.width, 30)
+        gradientLayer.colors = [UIColor.clearColor(),UIColor.blackColor().CGColor]
     }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-//    override func applyLayoutAttributes(layoutAttributes: UICollectionViewLayoutAttributes) {
-//        
-//        initBaseLayout(layoutAttributes)
-//        layoutPageSubViews(layoutAttributes)
-//    }
-    
     //MARK: -- private method
     func initBaseLayout() {
+        gradientLayer = CAGradientLayer()
         self.addSubview(bangumiImg)
+        self.bangumiImg.layer.addSublayer(gradientLayer)
         self.addSubview(bangumiTitle)
         self.addSubview(infoTitle)
         self.addSubview(newestTitle)

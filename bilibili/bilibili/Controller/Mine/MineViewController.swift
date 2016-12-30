@@ -31,18 +31,18 @@ class MineViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.hidden = false
+        self.navigationController?.navigationBar.hidden = true
     }
     
     //MARK: -- event response
     func moreInfo(sender: UIButton) {
         let mineDetail = MineDetailViewController()
-//        mineDetail.infoView.personData = self.mineData!
+        mineDetail.infoView.personData = self.mineData!
         self.navigationController?.pushViewController(mineDetail, animated: false)
     }
     //MARK: -- private method
     func initBaseLayout() {
-        self.navigationController?.navigationBar.hidden = true
-        self.hidesBottomBarWhenPushed = true
+        
         self.view.addSubview(headerView)
 //        self.addBezier(headerView)
         self.headerView.addSubview(avatarBackImg)

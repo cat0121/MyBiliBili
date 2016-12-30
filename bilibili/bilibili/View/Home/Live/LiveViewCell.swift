@@ -13,25 +13,28 @@ import SDWebImage
 
 class LiveViewCell: UICollectionViewCell {
     
+    var gradientLayer: CAGradientLayer!
+    
     //MARK: -- life cycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         initBaseLayout()
         layoutPageSubviews()
-        let gradientyLayer = CAGradientLayer()
-        gradientyLayer.frame = self.bounds
-        gradientyLayer.colors = [UIColor.lightGrayColor(),UIColor.grayColor(),UIColor.blackColor()]
-//        backImage.layer.addSublayer(gradientyLayer)
-        self.contentView.layer.insertSublayer(gradientyLayer, atIndex: 0)
+        
+        gradientLayer.frame = CGRectMake(0, self.contentView.bounds.size.height - 70, self.contentView.bounds.size.width, 30)
+        gradientLayer.colors = [UIColor.clearColor(),UIColor.blackColor().CGColor]
     }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     //MARK: -- private method
     func initBaseLayout() {
+        gradientLayer = CAGradientLayer()
         self.contentView.addSubview(liveImage)
+        self.liveImage.layer.addSublayer(gradientLayer)
         self.contentView.addSubview(liveTitle)
         self.liveImage.addSubview(backImage)
         self.backImage.addSubview(authorTitle)

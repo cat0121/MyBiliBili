@@ -13,25 +13,45 @@ import UIKit
 
 class MineDetailViewController: UIViewController {
     
+    var mineDetailHelper: MineDetailViewHelper?
+    var mineData: MineInfoModel?
+    
     //MARK: -- life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         initBaseLayout()
         layoutPageSubviews()
+        initHelper()
+        loadData()
+
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        self.tabBarController?.tabBar.hidden = true
+        self.navigationController?.navigationBar.hidden = true
     }
     //MARK: -- event response
     func backClick(sender: UIButton) {
         self.navigationController?.popViewControllerAnimated(false)
+    }
+    func headerMore(sender: UIButton) {
+        let favourite = FavouriteListViewController()
+        favourite.favouriteList = mineData?.favourite
+        self.navigationController?.pushViewController(favourite, animated: false)
+    }
+    func showMoreInfo(sender: UIButton) {
+        let personInfo = PersonalInfoViewController()
+        self.navigationController?.pushViewController(personInfo, animated: false)
     }
     
     //MARK: -- private method
     func initBaseLayout() {
         self.view.addSubview(headerView)
         self.headerView.addSubview(backBtn)
-        self.view.addSubview(scrollView)
-        self.scrollView.addSubview(infoView)
-        self.scrollView.addSubview(mineCollectionView)
+//        self.view.addSubview(scrollView)
+        self.view.addSubview(infoView)
+        self.view.addSubview(mineCollectionView)
     }
     func layoutPageSubviews() {
         headerView.snp_makeConstraints { (make) in
@@ -46,22 +66,22 @@ class MineDetailViewController: UIViewController {
             make.width.equalTo(28)
             make.height.equalTo(28)
         }
-        scrollView.snp_makeConstraints { (make) in
-            make.top.equalTo(self.view).offset(130-SCREEN_WIDTH*0.11)
-            make.left.equalTo(self.view).offset(0)
-            make.height.equalTo(SCREEN_HEIGHT)
-            make.width.equalTo(SCREEN_WIDTH)
-        }
+//        scrollView.snp_makeConstraints { (make) in
+//            make.top.equalTo(self.view).offset(130-SCREEN_WIDTH*0.11)
+//            make.left.equalTo(self.view).offset(0)
+//            make.height.equalTo(SCREEN_HEIGHT)
+//            make.width.equalTo(SCREEN_WIDTH)
+//        }
         infoView.snp_makeConstraints { (make) in
-            make.top.equalTo(scrollView).offset(SCREEN_WIDTH*0.11)
-            make.left.equalTo(scrollView).offset(0)
+            make.top.equalTo(self.view).offset(130)
+            make.left.equalTo(self.view).offset(0)
             make.width.equalTo(SCREEN_WIDTH)
-            make.height.equalTo(SCREEN_HEIGHT*0.23)
+            make.height.equalTo(SCREEN_HEIGHT*0.21)
         }
         mineCollectionView.snp_makeConstraints { (make) in
             make.top.equalTo(infoView.snp_bottom).offset(0)
-            make.left.equalTo(scrollView).offset(0)
-            make.bottom.equalTo(scrollView).offset(0)
+            make.left.equalTo(self.view).offset(0)
+            make.bottom.equalTo(self.view).offset(0)
             make.width.equalTo(SCREEN_WIDTH)
         }
     }
@@ -81,6 +101,17 @@ class MineDetailViewController: UIViewController {
         //添加并显示
         self.view.layer.addSublayer(shapeLayer)
         
+    }
+    func initHelper() {
+        mineDetailHelper = MineDetailViewHelper()
+        mineDetailHelper?.callBackDelegate = self
+        mineDetailHelper?.mineViewController = self
+        mineData = MineInfoModel()
+    }
+    func loadData() {
+        mineDetailHelper?.mineModel?.name = infoView.personData.uname
+        mineDetailHelper?.mineManager?.loadData()
+    
     }
     
     //MARK: -- setter and getter
@@ -102,20 +133,21 @@ class MineDetailViewController: UIViewController {
         }
         return _backBtn
     }
-    var _scrollView: UIScrollView!
-    var scrollView: UIScrollView {
-        if _scrollView == nil {
-            _scrollView = UIScrollView()
-            _scrollView.backgroundColor = UIColor.clearColor()
-            _scrollView.contentSize = CGSizeMake(SCREEN_WIDTH,600)
-        }
-        return _scrollView
-    }
+//    var _scrollView: UIScrollView!
+//    var scrollView: UIScrollView {
+//        if _scrollView == nil {
+//            _scrollView = UIScrollView()
+//            _scrollView.backgroundColor = UIColor.clearColor()
+//            _scrollView.contentSize = CGSizeMake(SCREEN_WIDTH,600)
+//        }
+//        return _scrollView
+//    }
     var _infoView: PersonalInfoView!
     var infoView: PersonalInfoView {
         if _infoView == nil {
             _infoView = PersonalInfoView()
             _infoView.backgroundColor = UIColor.whiteColor()
+//            _infoView.personalBtn.addTarget(self, action: #selector(<#T##@objc method#>), forControlEvents: <#T##UIControlEvents#>)
         }
         return _infoView
     }
@@ -130,8 +162,10 @@ class MineDetailViewController: UIViewController {
             _mineCollectionView.delegate = self
             _mineCollectionView.dataSource = self
             
-            _mineCollectionView.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: "mineCell1")
-            _mineCollectionView.registerClass(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "mineDHeader")
+            _mineCollectionView.registerClass(FavouriteViewCell.self, forCellWithReuseIdentifier: "favouriteCell")
+            _mineCollectionView.registerClass(SeasonViewCell.self, forCellWithReuseIdentifier: "seasonCell")
+            _mineCollectionView.registerClass(TagViewCell.self, forCellWithReuseIdentifier: "tagCell")
+            _mineCollectionView.registerClass(MineInfoHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "mineDHeader")
         }
         return _mineCollectionView
     }
@@ -142,17 +176,88 @@ extension MineDetailViewController: UICollectionViewDelegate, UICollectionViewDa
         return 3
     }
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        switch section {
+        case 0:
+            if mineData?.favourite?.item?.count > 0 && mineData?.favourite?.item?.count <= 3 {
+                return (mineData?.favourite?.item?.count)!
+            } else if mineData?.favourite?.item?.count > 3 {
+                return 3
+            }
+        case 1:
+            if mineData?.season?.item?.count > 0 && mineData?.season?.item?.count <= 3 {
+                return (mineData?.season?.item?.count)!
+            } else if mineData?.season?.item?.count > 3 {
+                return 3
+            }
+        case 2:
+            if mineData?.tag?.count > 0 && mineData?.tag?.count <= 3 {
+                return (mineData?.tag?.count)!
+            } else if mineData?.tag?.count > 3 {
+                return 3
+            }
+        default:
+            return 0
+        }
+        return 0
     }
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("mineCell1", forIndexPath: indexPath)
-        return cell
+        if indexPath.section == 0 {
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("favouriteCell", forIndexPath: indexPath) as! FavouriteViewCell
+            cell.favourite = (mineData?.favourite?.item?[indexPath.item])!
+            return cell
+        } else if indexPath.section == 1 {
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("seasonCell", forIndexPath: indexPath) as! SeasonViewCell
+            cell.seasonModel = (mineData?.season?.item?[indexPath.item])!
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("tagCell", forIndexPath: indexPath) as! TagViewCell
+            cell.tagModel = (mineData?.tag![indexPath.item])!
+            return cell
+        }
+    }
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        switch indexPath.section {
+        case 0:
+            return CGSizeMake(SCREEN_WIDTH*0.33, SCREEN_WIDTH*0.33)
+        case 1:
+            return CGSizeMake(SCREEN_WIDTH*0.28, SCREEN_HEIGHT*0.236)
+        case 2:
+            return CGSizeMake(50, SCREEN_HEIGHT*0.04)
+        default:
+            return CGSizeMake(0, 0)
+        }
+    }
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(0, 10, 0, 10)
     }
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "mineDHeader", forIndexPath: indexPath)
+        let header = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "mineDHeader", forIndexPath: indexPath) as! MineInfoHeader
+        if mineData?.tag != nil {
+            switch indexPath.section {
+            case 0:
+                header.classifyLab.text = String.init(format: "我的收藏夹 %d", mineData!.favourite!.item!.count)
+            case 1:
+                header.classifyLab.text = String.init(format: "我的追番 %d", mineData!.season!.item!.count)
+            case 2:
+                header.classifyLab.text = String.init(format: "我关注的标签 %d", mineData!.tag!.count)
+            default:
+                break
+            }
+        }
+        header.moreButton.addTarget(self, action: #selector(MineDetailViewController.headerMore(_:)), forControlEvents: .TouchUpInside)
         return header
     }
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSizeMake(SCREEN_WIDTH, 35)
+        return CGSizeMake(SCREEN_WIDTH, 40)
+    }
+}
+
+extension MineDetailViewController: MineDetailViewCallBackDelegate {
+    func callBackSuccess() {
+        mineData = mineDetailHelper?.mineModel
+        mineCollectionView.reloadData()
+    }
+    func callBackFailure() {
+        
     }
 }

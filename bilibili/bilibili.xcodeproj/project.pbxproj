@@ -17,6 +17,8 @@
 		F90B971D1DF5541C004BA4B8 /* EveryonSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B971C1DF5541C004BA4B8 /* EveryonSearchModel.swift */; };
 		F90B97201DF5563A004BA4B8 /* SearchViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B971F1DF5563A004BA4B8 /* SearchViewHelper.swift */; };
 		F90E2D3C1E0B6B4700E93E91 /* PersonalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E2D3B1E0B6B4700E93E91 /* PersonalInfoView.swift */; };
+		F9130D631E162E5C00483742 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9130D621E162E5C00483742 /* PersonalInfoViewController.swift */; };
+		F9130D651E16325500483742 /* PersonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9130D641E16325500483742 /* PersonViewCell.swift */; };
 		F915FC191E03CE3E001DCBB3 /* SearchClassifiyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915FC181E03CE3E001DCBB3 /* SearchClassifiyModel.swift */; };
 		F925211F1DD1946A00D8E45C /* BangumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F925211E1DD1946A00D8E45C /* BangumiViewController.swift */; };
 		F925212D1DD1995200D8E45C /* SCNavTabBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F92521241DD1995200D8E45C /* SCNavTabBar.bundle */; };
@@ -56,9 +58,14 @@
 		F935BC701DE574090074DA05 /* ShortFilmViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935BC6F1DE574090074DA05 /* ShortFilmViewManager.swift */; };
 		F935BC721DE5741F0074DA05 /* ShortFilmAllManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935BC711DE5741F0074DA05 /* ShortFilmAllManager.swift */; };
 		F935BC761DE581740074DA05 /* SynthesisViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935BC751DE581740074DA05 /* SynthesisViewManager.swift */; };
+		F93665631E15137F008046E6 /* FavouriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93665621E15137F008046E6 /* FavouriteListViewController.swift */; };
+		F93665651E15139B008046E6 /* SeasonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93665641E15139B008046E6 /* SeasonListViewController.swift */; };
+		F93665671E1513B7008046E6 /* TagListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93665661E1513B7008046E6 /* TagListViewController.swift */; };
 		F942A6AC1E0A2A8E00BDECF3 /* MineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F942A6AB1E0A2A8D00BDECF3 /* MineDetailViewController.swift */; };
 		F942A6AF1E0A2D0F00BDECF3 /* MineViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F942A6AE1E0A2D0F00BDECF3 /* MineViewManager.swift */; };
 		F94C36A01DED4BA4002FA904 /* BannerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94C369F1DED4BA4002FA904 /* BannerDetailViewController.swift */; };
+		F94D764F1E10E73B00ED61BD /* FavouriteViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D764E1E10E73B00ED61BD /* FavouriteViewCell.swift */; };
+		F94D76511E10F6F600ED61BD /* SeasonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D76501E10F6F600ED61BD /* SeasonViewCell.swift */; };
 		F961E5711DDDB72800945F2C /* PartionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961E5701DDDB72800945F2C /* PartionModel.swift */; };
 		F96304131DDC66BA00B0F1F7 /* BangumiViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96304121DDC66BA00B0F1F7 /* BangumiViewHeader.swift */; };
 		F963613D1E077B75006C765E /* SearchMoiveViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F963613C1E077B75006C765E /* SearchMoiveViewHelper.swift */; };
@@ -186,6 +193,8 @@
 		F9CA11E71E038D5B00C93DA6 /* SearchSynthesisViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CA11E61E038D5A00C93DA6 /* SearchSynthesisViewHeader.swift */; };
 		F9CCDA071E0A48B40040A818 /* MineViewReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCDA061E0A48B40040A818 /* MineViewReformer.swift */; };
 		F9CCDA0A1E0A4A1B0040A818 /* MineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCDA091E0A4A1B0040A818 /* MineViewModel.swift */; };
+		F9DD381E1E110B2500A702A5 /* MineInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DD381D1E110B2500A702A5 /* MineInfoHeader.swift */; };
+		F9DD38201E111A2D00A702A5 /* TagViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DD381F1E111A2D00A702A5 /* TagViewCell.swift */; };
 		F9DEDC301DDAAE6500224BB4 /* LiveViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DEDC2F1DDAAE6500224BB4 /* LiveViewCell.swift */; };
 		F9DEDC321DDAF6BE00224BB4 /* LiveHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DEDC311DDAF6BD00224BB4 /* LiveHeaderView.swift */; };
 		F9E45E421DD9AEC10034B359 /* RecommendViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E45E411DD9AEC00034B359 /* RecommendViewFooter.swift */; };
@@ -239,6 +248,8 @@
 		F90B971C1DF5541C004BA4B8 /* EveryonSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryonSearchModel.swift; sourceTree = "<group>"; };
 		F90B971F1DF5563A004BA4B8 /* SearchViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewHelper.swift; sourceTree = "<group>"; };
 		F90E2D3B1E0B6B4700E93E91 /* PersonalInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoView.swift; sourceTree = "<group>"; };
+		F9130D621E162E5C00483742 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
+		F9130D641E16325500483742 /* PersonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewCell.swift; sourceTree = "<group>"; };
 		F915FC181E03CE3E001DCBB3 /* SearchClassifiyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchClassifiyModel.swift; sourceTree = "<group>"; };
 		F925211E1DD1946A00D8E45C /* BangumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiViewController.swift; sourceTree = "<group>"; };
 		F92521231DD1995200D8E45C /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
@@ -289,9 +300,14 @@
 		F935BC6F1DE574090074DA05 /* ShortFilmViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortFilmViewManager.swift; sourceTree = "<group>"; };
 		F935BC711DE5741F0074DA05 /* ShortFilmAllManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortFilmAllManager.swift; sourceTree = "<group>"; };
 		F935BC751DE581740074DA05 /* SynthesisViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynthesisViewManager.swift; sourceTree = "<group>"; };
+		F93665621E15137F008046E6 /* FavouriteListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteListViewController.swift; sourceTree = "<group>"; };
+		F93665641E15139B008046E6 /* SeasonListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonListViewController.swift; sourceTree = "<group>"; };
+		F93665661E1513B7008046E6 /* TagListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagListViewController.swift; sourceTree = "<group>"; };
 		F942A6AB1E0A2A8D00BDECF3 /* MineDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineDetailViewController.swift; sourceTree = "<group>"; };
 		F942A6AE1E0A2D0F00BDECF3 /* MineViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewManager.swift; sourceTree = "<group>"; };
 		F94C369F1DED4BA4002FA904 /* BannerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerDetailViewController.swift; sourceTree = "<group>"; };
+		F94D764E1E10E73B00ED61BD /* FavouriteViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteViewCell.swift; sourceTree = "<group>"; };
+		F94D76501E10F6F600ED61BD /* SeasonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonViewCell.swift; sourceTree = "<group>"; };
 		F961E5701DDDB72800945F2C /* PartionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartionModel.swift; sourceTree = "<group>"; };
 		F96304121DDC66BA00B0F1F7 /* BangumiViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiViewHeader.swift; sourceTree = "<group>"; };
 		F963613C1E077B75006C765E /* SearchMoiveViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMoiveViewHelper.swift; sourceTree = "<group>"; };
@@ -419,6 +435,8 @@
 		F9CA11E61E038D5A00C93DA6 /* SearchSynthesisViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSynthesisViewHeader.swift; sourceTree = "<group>"; };
 		F9CCDA061E0A48B40040A818 /* MineViewReformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewReformer.swift; sourceTree = "<group>"; };
 		F9CCDA091E0A4A1B0040A818 /* MineViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewModel.swift; sourceTree = "<group>"; };
+		F9DD381D1E110B2500A702A5 /* MineInfoHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineInfoHeader.swift; sourceTree = "<group>"; };
+		F9DD381F1E111A2D00A702A5 /* TagViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewCell.swift; sourceTree = "<group>"; };
 		F9DEDC2F1DDAAE6500224BB4 /* LiveViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewCell.swift; sourceTree = "<group>"; };
 		F9DEDC311DDAF6BD00224BB4 /* LiveHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveHeaderView.swift; sourceTree = "<group>"; };
 		F9E45E411DD9AEC00034B359 /* RecommendViewFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewFooter.swift; sourceTree = "<group>"; };
@@ -706,8 +724,12 @@
 		F926E84B1DD0573400AB28B8 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				F936655F1E151347008046E6 /* Favourite */,
+				F93665601E151347008046E6 /* Season */,
+				F93665611E151347008046E6 /* Tag */,
 				F97B79761DD0710000F35DC3 /* MineViewController.swift */,
 				F942A6AB1E0A2A8D00BDECF3 /* MineDetailViewController.swift */,
+				F9130D621E162E5C00483742 /* PersonalInfoViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -825,6 +847,30 @@
 				F92C22471E03D69400BE9B54 /* SearchUPViewReformer.swift */,
 			);
 			path = UP;
+			sourceTree = "<group>";
+		};
+		F936655F1E151347008046E6 /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				F93665621E15137F008046E6 /* FavouriteListViewController.swift */,
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		F93665601E151347008046E6 /* Season */ = {
+			isa = PBXGroup;
+			children = (
+				F93665641E15139B008046E6 /* SeasonListViewController.swift */,
+			);
+			path = Season;
+			sourceTree = "<group>";
+		};
+		F93665611E151347008046E6 /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				F93665661E1513B7008046E6 /* TagListViewController.swift */,
+			);
+			path = Tag;
 			sourceTree = "<group>";
 		};
 		F942A6AD1E0A2CF200BDECF3 /* Mine */ = {
@@ -1000,6 +1046,11 @@
 				F92A0D061E09206C0039FE96 /* MineViewCell.swift */,
 				F92A0D081E0936610039FE96 /* MineViewHeader.swift */,
 				F90E2D3B1E0B6B4700E93E91 /* PersonalInfoView.swift */,
+				F94D764E1E10E73B00ED61BD /* FavouriteViewCell.swift */,
+				F94D76501E10F6F600ED61BD /* SeasonViewCell.swift */,
+				F9DD381D1E110B2500A702A5 /* MineInfoHeader.swift */,
+				F9DD381F1E111A2D00A702A5 /* TagViewCell.swift */,
+				F9130D641E16325500483742 /* PersonViewCell.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -1758,6 +1809,8 @@
 				F925212F1DD1995200D8E45C /* SCNavTabBar.m in Sources */,
 				F9665FB91DE2C1BA0060D6F8 /* PartionViewManager.swift in Sources */,
 				F9665FC61DE2C88A0060D6F8 /* BangumiModel.swift in Sources */,
+				F93665651E15139B008046E6 /* SeasonListViewController.swift in Sources */,
+				F9130D651E16325500483742 /* PersonViewCell.swift in Sources */,
 				F9838BF01DE538F4009AE2C1 /* SynthesisViewController.swift in Sources */,
 				F92C224B1E03D69400BE9B54 /* EveryoneSearchReformer.swift in Sources */,
 				F9665FB41DE2C1610060D6F8 /* SerialCartoonViewHelper.swift in Sources */,
@@ -1773,6 +1826,7 @@
 				F9665FB11DE2C0530060D6F8 /* PartionViewHelper.swift in Sources */,
 				F97B79751DD070C000F35DC3 /* HomeViewController.swift in Sources */,
 				F9838BFB1DE54080009AE2C1 /* CartoonRecommendManager.swift in Sources */,
+				F9DD381E1E110B2500A702A5 /* MineInfoHeader.swift in Sources */,
 				F9A447971DE699B000E8BB6B /* OPViewHelper.swift in Sources */,
 				F9A447A91DE6B16400E8BB6B /* MusicSetViewHelper.swift in Sources */,
 				F9E45E441DD9C4320034B359 /* LiveViewManager.swift in Sources */,
@@ -1784,6 +1838,8 @@
 				F9FBBA731DF1216D002C310F /* ChaseViewCell.swift in Sources */,
 				F9838C041DE56CD2009AE2C1 /* MMDViewHelper.swift in Sources */,
 				F9A447891DE68D5900E8BB6B /* VOCALOIDAllManager.swift in Sources */,
+				F93665671E1513B7008046E6 /* TagListViewController.swift in Sources */,
+				F94D76511E10F6F600ED61BD /* SeasonViewCell.swift in Sources */,
 				F9A447A11DE6AF3200E8BB6B /* ThreeAllManager.swift in Sources */,
 				F935BC721DE5741F0074DA05 /* ShortFilmAllManager.swift in Sources */,
 				F9A447A31DE6AF7300E8BB6B /* ThreeViewHelper.swift in Sources */,
@@ -1827,6 +1883,7 @@
 				F9838C001DE54302009AE2C1 /* CartoonRecommendModel.swift in Sources */,
 				F9A4479D1DE6ACED00E8BB6B /* OriginalAllManager.swift in Sources */,
 				F99A3D4B1DE44CFA00587685 /* InfomationViewManager.swift in Sources */,
+				F93665631E15137F008046E6 /* FavouriteListViewController.swift in Sources */,
 				F9665FC81DE2C88A0060D6F8 /* RecommendModel.swift in Sources */,
 				F9A4477F1DE6869B00E8BB6B /* MusicRepriseViewManager.swift in Sources */,
 				F9B3E0601DE598810094AB34 /* PartionRecommendBaseViewController.swift in Sources */,
@@ -1860,6 +1917,7 @@
 				F9838BEA1DE5380F009AE2C1 /* MADViewController.swift in Sources */,
 				F9838BEC1DE53841009AE2C1 /* MMDViewController.swift in Sources */,
 				F9FBBA7E1DF13F8F002C310F /* DynamicViewHelper.swift in Sources */,
+				F9130D631E162E5C00483742 /* PersonalInfoViewController.swift in Sources */,
 				F92A0D091E0936610039FE96 /* MineViewHeader.swift in Sources */,
 				F9A447811DE6873B00E8BB6B /* MusicRepriseViewHelper.swift in Sources */,
 				F92C22491E03D69400BE9B54 /* SearchMoiveViewReformer.swift in Sources */,
@@ -1904,7 +1962,9 @@
 				F926E8501DD057B500AB28B8 /* MainTabBarController.swift in Sources */,
 				F9B3E0641DE59B0E0094AB34 /* MusicRecManager.swift in Sources */,
 				F9665FCD1DE2C9630060D6F8 /* SerialCartoonViewCell.swift in Sources */,
+				F94D764F1E10E73B00ED61BD /* FavouriteViewCell.swift in Sources */,
 				F935BC701DE574090074DA05 /* ShortFilmViewManager.swift in Sources */,
+				F9DD38201E111A2D00A702A5 /* TagViewCell.swift in Sources */,
 				F9A4479F1DE6AF2300E8BB6B /* ThreeViewManager.swift in Sources */,
 				F92C224F1E03D69400BE9B54 /* SearchSynthesisViewManager.swift in Sources */,
 				F92C224E1E03D69400BE9B54 /* SearchSubjectViewReformer.swift in Sources */,

@@ -12,18 +12,17 @@ import SDWebImage
 
 class RecommendViewCell: UICollectionViewCell {
     
-    //MARK: -- private method
+    var gradientLayer: CAGradientLayer!
+    
+    //MARK: -- life cycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        //初始化界面
         initBaseLayout()
         layoutPageSubViews()
-//        let gradientyLayer = CAGradientLayer()
-//        gradientyLayer.frame = self.bounds
-//        gradientyLayer.colors = [UIColor.whiteColor(),UIColor.lightGrayColor(),UIColor.grayColor(),UIColor.blackColor()]
-//        self.layer.addSublayer(gradientyLayer)
         
+        gradientLayer.frame = CGRectMake(0, self.contentView.bounds.size.height - 70, self.contentView.bounds.size.width, 30)
+        gradientLayer.colors = [UIColor.clearColor(),UIColor.blackColor().CGColor]
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -31,13 +30,14 @@ class RecommendViewCell: UICollectionViewCell {
     
     //MARK: -- private method
     func initBaseLayout() {
+        gradientLayer = CAGradientLayer()
         self.contentView.addSubview(recImageView)
+        recImageView.layer.addSublayer(gradientLayer)
         self.contentView.addSubview(recTitle)
-        self.recImageView.addSubview(detailView)
-        self.detailView.addSubview(videoImageView)
-        self.detailView.addSubview(videoLabel)
-        self.detailView.addSubview(commentImageView)
-        self.detailView.addSubview(commentLabel)
+        self.recImageView.addSubview(videoImageView)
+        self.recImageView.addSubview(videoLabel)
+        self.recImageView.addSubview(commentImageView)
+        self.recImageView.addSubview(commentLabel)
     }
     func layoutPageSubViews() {
         recImageView.snp_makeConstraints { (make) in
@@ -50,33 +50,27 @@ class RecommendViewCell: UICollectionViewCell {
             make.top.equalTo(recImageView.snp_bottom).offset(3)
             make.width.equalTo(contentView.frame.size.width)
         }
-        detailView.snp_makeConstraints { (make) in
-            make.bottom.equalTo(recImageView.snp_bottom).offset(0)
-            make.left.equalTo(self.contentView).offset(0)
-            make.right.equalTo(self.contentView).offset(0)
-            make.height.equalTo(25)
-        }
         videoImageView.snp_makeConstraints { (make) in
-            make.left.equalTo(detailView.snp_left).offset(10)
-            make.bottom.equalTo(detailView.snp_bottom).offset(-3)
-            make.height.equalTo(15)
-            make.width.equalTo(20)
+            make.left.equalTo(recImageView.snp_left).offset(10)
+            make.bottom.equalTo(recImageView.snp_bottom).offset(-5)
+            make.height.equalTo(13)
+            make.width.equalTo(18)
         }
         videoLabel.snp_makeConstraints { (make) in
             make.left.equalTo(videoImageView.snp_right).offset(5)
-            make.bottom.equalTo(detailView.snp_bottom).offset(-3)
+            make.bottom.equalTo(recImageView.snp_bottom).offset(-3)
             make.height.equalTo(18)
             make.width.equalTo(50)
         }
         commentImageView.snp_makeConstraints { (make) in
-            make.left.equalTo(detailView.snp_left).offset(contentView.frame.size.width/2)
-            make.bottom.equalTo(detailView.snp_bottom).offset(-3)
-            make.height.equalTo(15)
-            make.width.equalTo(20)
+            make.left.equalTo(recImageView.snp_left).offset(contentView.frame.size.width/2)
+            make.bottom.equalTo(recImageView.snp_bottom).offset(-5)
+            make.height.equalTo(13)
+            make.width.equalTo(18)
         }
         commentLabel.snp_makeConstraints { (make) in
             make.left.equalTo(commentImageView.snp_right).offset(5)
-            make.bottom.equalTo(detailView.snp_bottom).offset(-3)
+            make.bottom.equalTo(recImageView.snp_bottom).offset(-3)
             make.height.equalTo(18)
             make.width.equalTo(50)
         }
@@ -103,16 +97,6 @@ class RecommendViewCell: UICollectionViewCell {
             _recTitle.numberOfLines = 2
         }
         return _recTitle
-    }
-    
-    var _detailView: UIView!
-    var detailView: UIView {
-        if _detailView == nil {
-            _detailView = UIView()
-            _detailView.backgroundColor = UIColor.grayColor()
-            _detailView.alpha = 0.8
-        }
-        return _detailView
     }
     
     var _videoImageView: UIImageView!
@@ -163,8 +147,8 @@ class RecommendViewCell: UICollectionViewCell {
         set {
             _bodyModel = newValue
             recTitle.text = newValue.title
-            videoLabel.text = String(newValue.playcount)
-            commentLabel.text = String(newValue.danmaku)
+            videoLabel.text = String.init(format: "%d", newValue.playcount!)
+            commentLabel.text = String.init(format: "%d", newValue.danmaku!)
             recImageView.sd_setImageWithURL(NSURL(string:  newValue.bodyImage!), placeholderImage: UIImage(named: "default_img"))
         }
     }

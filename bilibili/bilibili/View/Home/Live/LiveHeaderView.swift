@@ -70,7 +70,7 @@ class LiveHeaderView: UICollectionReusableView, SDCycleScrollViewDelegate {
         moreButton.snp_makeConstraints { (make) in
             make.bottom.equalTo(self.snp_bottom).offset(-8)
             make.right.equalTo(self).offset(-5)
-            make.width.equalTo(8)
+            make.width.equalTo(13)
             make.height.equalTo(13)
         }
         rightTitle.snp_makeConstraints { (make) in

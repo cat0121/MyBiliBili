@@ -31,6 +31,7 @@ class PersonalInfoView: UIView {
         self.addSubview(attention)
         self.addSubview(fansLab)
         self.addSubview(signLab)
+        self.addSubview(personalBtn)
     }
     func layoutPageSubviews() {
         avatarImg.snp_makeConstraints { (make) in
@@ -78,6 +79,12 @@ class PersonalInfoView: UIView {
             make.left.equalTo(self).offset(10)
             make.right.equalTo(self).offset(-10)
             make.height.equalTo(20)
+        }
+        personalBtn.snp_makeConstraints { (make) in
+            make.right.equalTo(self).offset(-10)
+            make.top.equalTo(self).offset(10)
+            make.width.equalTo(SCREEN_WIDTH*0.21)
+            make.height.equalTo(30)
         }
     }
     
@@ -155,6 +162,21 @@ class PersonalInfoView: UIView {
             _signLab.textColor = UIColor.grayColor()
         }
         return _signLab
+    }
+    var _personalBtn: UIButton!
+    var personalBtn: UIButton {
+        if _personalBtn == nil {
+            _personalBtn = UIButton(type: .Custom)
+            _personalBtn.titleLabel?.font = UIFont.systemFontOfSize(12)
+            _personalBtn.backgroundColor = UIColor.whiteColor()
+            _personalBtn.setTitle("个人资料", forState: .Normal)
+            _personalBtn.setTitleColor(YYMain_Color, forState: .Normal)
+            _personalBtn.layer.borderColor = YYMain_Color.CGColor
+            _personalBtn.layer.borderWidth = 1
+            _personalBtn.layer.cornerRadius = 5.0
+            _personalBtn.layer.masksToBounds = true
+        }
+        return _personalBtn
     }
     
     //数据源
