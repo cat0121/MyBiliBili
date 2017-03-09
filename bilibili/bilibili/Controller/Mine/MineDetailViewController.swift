@@ -6,7 +6,7 @@
 //  Copyright © 2016年 yan. All rights reserved.
 //
 
-//http://account.bilibili.com/api/myinfo/v2?access_key=c047fed0df3d42ac47e231e832ce4a53&appkey=27eb53fc9058f8c3&platform=ios&ts=1482289744&type=json&sign=2243d1b84ce3e0882a639a9dee555ba5
+//http://account.bilibili.com/api/myinfo/v2?_device=iphone&_hwid=27d487196f4b7df1&_ulv=10000&access_key=424ba271934bd985b823acef134f42a1&appkey=27eb53fc9058f8c3&appver=4070&build=4070&platform=ios&ts=1483411388&type=json&sign=e9ca84a4d9bd106e473f308ec191fdfd
 //更详细的信息：http://app.bilibili.com/x/v2/space?access_key=c047fed0df3d42ac47e231e832ce4a53&build=4040&device=phone&mobi_app=1&name=%E8%90%8C%E5%B0%8F%E7%8C%AB121&platform=ios&vmid=52052310
 
 import UIKit
@@ -15,6 +15,7 @@ class MineDetailViewController: UIViewController {
     
     var mineDetailHelper: MineDetailViewHelper?
     var mineData: MineInfoModel?
+    var indexP: Int?
     
     //MARK: -- life cycle
     override func viewDidLoad() {
@@ -35,13 +36,24 @@ class MineDetailViewController: UIViewController {
     func backClick(sender: UIButton) {
         self.navigationController?.popViewControllerAnimated(false)
     }
-    func headerMore(sender: UIButton) {
+    func headerFavourite(sender: UIButton) {
         let favourite = FavouriteListViewController()
         favourite.favouriteList = mineData?.favourite
         self.navigationController?.pushViewController(favourite, animated: false)
     }
+    func headerSeason(sender: UIButton) {
+        let season = SeasonListViewController()
+        season.seasonListData = mineData?.season
+        self.navigationController?.pushViewController(season, animated: false)
+    }
+    func headerTag(sender: UIButton) {
+        let tag = TagListViewController()
+        tag.tagListData = mineData?.tag
+        self.navigationController?.pushViewController(tag, animated: false)
+    }
     func showMoreInfo(sender: UIButton) {
         let personInfo = PersonalInfoViewController()
+        personInfo.mineData = infoView.personData
         self.navigationController?.pushViewController(personInfo, animated: false)
     }
     
@@ -147,7 +159,7 @@ class MineDetailViewController: UIViewController {
         if _infoView == nil {
             _infoView = PersonalInfoView()
             _infoView.backgroundColor = UIColor.whiteColor()
-//            _infoView.personalBtn.addTarget(self, action: #selector(<#T##@objc method#>), forControlEvents: <#T##UIControlEvents#>)
+            _infoView.personalBtn.addTarget(self, action: #selector(MineDetailViewController.showMoreInfo(_:)), forControlEvents: .TouchUpInside)
         }
         return _infoView
     }
@@ -236,15 +248,18 @@ extension MineDetailViewController: UICollectionViewDelegate, UICollectionViewDa
             switch indexPath.section {
             case 0:
                 header.classifyLab.text = String.init(format: "我的收藏夹 %d", mineData!.favourite!.item!.count)
+                header.moreButton.addTarget(self, action: #selector(MineDetailViewController.headerFavourite(_:)), forControlEvents: .TouchUpInside)
             case 1:
                 header.classifyLab.text = String.init(format: "我的追番 %d", mineData!.season!.item!.count)
+                header.moreButton.addTarget(self, action: #selector(MineDetailViewController.headerSeason(_:)), forControlEvents: .TouchUpInside)
             case 2:
                 header.classifyLab.text = String.init(format: "我关注的标签 %d", mineData!.tag!.count)
+                header.moreButton.addTarget(self, action: #selector(MineDetailViewController.headerTag(_:)), forControlEvents: .TouchUpInside)
             default:
                 break
             }
         }
-        header.moreButton.addTarget(self, action: #selector(MineDetailViewController.headerMore(_:)), forControlEvents: .TouchUpInside)
+        
         return header
     }
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {

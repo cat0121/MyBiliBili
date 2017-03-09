@@ -51,8 +51,8 @@ class MineDetailViewHelper: NSObject, CSAPIManagerApiCallBackDelegate, CSAPIMana
         }
     }
     func paramsForApi(manager: CSAPIBaseManager) -> [String : AnyObject] {
-        let dic = [String: AnyObject]()
-        
+        var dic = [String: AnyObject]()
+        dic["name"] = "萌小猫121"
         return dic
     }
     

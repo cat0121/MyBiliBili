@@ -16,7 +16,7 @@ class MineViewManager: CSAPIBaseManager,CSAPIManagerDelegate {
     }
     //请求URL
     var apiName: String {
-        return "/api/myinfo/v2?access_key=c047fed0df3d42ac47e231e832ce4a53&appkey=27eb53fc9058f8c3&platform=ios&ts=1482289744&type=json&sign=2243d1b84ce3e0882a639a9dee555ba5"
+        return "/api/myinfo/v2?_device=iphone&_hwid=27d487196f4b7df1&_ulv=10000&access_key=424ba271934bd985b823acef134f42a1&appkey=27eb53fc9058f8c3&appver=4070&build=4070&platform=ios&ts=1483411388&type=json&sign=e9ca84a4d9bd106e473f308ec191fdfd"
     }
     //请求方式
     var httpMethod: Alamofire.Method {

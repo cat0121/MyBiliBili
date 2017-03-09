@@ -20,6 +20,7 @@
 		F9130D631E162E5C00483742 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9130D621E162E5C00483742 /* PersonalInfoViewController.swift */; };
 		F9130D651E16325500483742 /* PersonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9130D641E16325500483742 /* PersonViewCell.swift */; };
 		F915FC191E03CE3E001DCBB3 /* SearchClassifiyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915FC181E03CE3E001DCBB3 /* SearchClassifiyModel.swift */; };
+		F92411B91E1C9BD6008C7BA4 /* TagDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92411B81E1C9BD6008C7BA4 /* TagDetailViewController.swift */; };
 		F925211F1DD1946A00D8E45C /* BangumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F925211E1DD1946A00D8E45C /* BangumiViewController.swift */; };
 		F925212D1DD1995200D8E45C /* SCNavTabBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F92521241DD1995200D8E45C /* SCNavTabBar.bundle */; };
 		F925212E1DD1995200D8E45C /* SCNavTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92521271DD1995200D8E45C /* SCNavTabBarController.m */; };
@@ -203,6 +204,7 @@
 		F9E45E481DD9C7380034B359 /* LiveViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E45E471DD9C7380034B359 /* LiveViewHelper.swift */; };
 		F9E591291E07C55000D2C8F9 /* SearchSubjectViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E591281E07C55000D2C8F9 /* SearchSubjectViewHelper.swift */; };
 		F9E5912B1E07DAB400D2C8F9 /* SubjectDeatilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E5912A1E07DAB400D2C8F9 /* SubjectDeatilViewController.swift */; };
+		F9EFCD5F1E1CA7E90091FBB2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EFCD5E1E1CA7E90091FBB2 /* SettingViewController.swift */; };
 		F9F91AC81DDC035100E3CD8B /* BangumiViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F91AC71DDC035100E3CD8B /* BangumiViewHelper.swift */; };
 		F9FAB4B01E0D204000407839 /* MineDetailViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB4AF1E0D204000407839 /* MineDetailViewHelper.swift */; };
 		F9FAB4B21E0D205700407839 /* MineInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB4B11E0D205700407839 /* MineInfoManager.swift */; };
@@ -251,6 +253,7 @@
 		F9130D621E162E5C00483742 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
 		F9130D641E16325500483742 /* PersonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewCell.swift; sourceTree = "<group>"; };
 		F915FC181E03CE3E001DCBB3 /* SearchClassifiyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchClassifiyModel.swift; sourceTree = "<group>"; };
+		F92411B81E1C9BD6008C7BA4 /* TagDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagDetailViewController.swift; sourceTree = "<group>"; };
 		F925211E1DD1946A00D8E45C /* BangumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiViewController.swift; sourceTree = "<group>"; };
 		F92521231DD1995200D8E45C /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
 		F92521241DD1995200D8E45C /* SCNavTabBar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SCNavTabBar.bundle; sourceTree = "<group>"; };
@@ -445,6 +448,7 @@
 		F9E45E471DD9C7380034B359 /* LiveViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewHelper.swift; sourceTree = "<group>"; };
 		F9E591281E07C55000D2C8F9 /* SearchSubjectViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSubjectViewHelper.swift; sourceTree = "<group>"; };
 		F9E5912A1E07DAB400D2C8F9 /* SubjectDeatilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectDeatilViewController.swift; sourceTree = "<group>"; };
+		F9EFCD5E1E1CA7E90091FBB2 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		F9F91AC71DDC035100E3CD8B /* BangumiViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiViewHelper.swift; sourceTree = "<group>"; };
 		F9FAB4AF1E0D204000407839 /* MineDetailViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineDetailViewHelper.swift; sourceTree = "<group>"; };
 		F9FAB4B11E0D205700407839 /* MineInfoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineInfoManager.swift; sourceTree = "<group>"; };
@@ -724,6 +728,7 @@
 		F926E84B1DD0573400AB28B8 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				F9EFCD5D1E1CA68C0091FBB2 /* Setting */,
 				F936655F1E151347008046E6 /* Favourite */,
 				F93665601E151347008046E6 /* Season */,
 				F93665611E151347008046E6 /* Tag */,
@@ -869,6 +874,7 @@
 			isa = PBXGroup;
 			children = (
 				F93665661E1513B7008046E6 /* TagListViewController.swift */,
+				F92411B81E1C9BD6008C7BA4 /* TagDetailViewController.swift */,
 			);
 			path = Tag;
 			sourceTree = "<group>";
@@ -1585,6 +1591,14 @@
 			path = Live;
 			sourceTree = "<group>";
 		};
+		F9EFCD5D1E1CA68C0091FBB2 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				F9EFCD5E1E1CA7E90091FBB2 /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		F9FBBA711DF1216D002C310F /* Chase */ = {
 			isa = PBXGroup;
 			children = (
@@ -1929,6 +1943,7 @@
 				F97B79731DD0706B00F35DC3 /* AttentionViewController.swift in Sources */,
 				F90B971D1DF5541C004BA4B8 /* EveryonSearchModel.swift in Sources */,
 				F9A447851DE68D3600E8BB6B /* VOCALOIDViewHelper.swift in Sources */,
+				F9EFCD5F1E1CA7E90091FBB2 /* SettingViewController.swift in Sources */,
 				F90B97201DF5563A004BA4B8 /* SearchViewHelper.swift in Sources */,
 				F9278B291DF90F1B00B5F3A4 /* SearchMoiveViewController.swift in Sources */,
 				F9FBBA821DF144AD002C310F /* MarkViewCell.swift in Sources */,
@@ -1964,6 +1979,7 @@
 				F9665FCD1DE2C9630060D6F8 /* SerialCartoonViewCell.swift in Sources */,
 				F94D764F1E10E73B00ED61BD /* FavouriteViewCell.swift in Sources */,
 				F935BC701DE574090074DA05 /* ShortFilmViewManager.swift in Sources */,
+				F92411B91E1C9BD6008C7BA4 /* TagDetailViewController.swift in Sources */,
 				F9DD38201E111A2D00A702A5 /* TagViewCell.swift in Sources */,
 				F9A4479F1DE6AF2300E8BB6B /* ThreeViewManager.swift in Sources */,
 				F92C224F1E03D69400BE9B54 /* SearchSynthesisViewManager.swift in Sources */,
